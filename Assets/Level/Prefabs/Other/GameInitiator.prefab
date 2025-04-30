@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4484977687416570415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4843496950830554557}
+  - component: {fileID: 5199290928022053212}
+  m_Layer: 0
+  m_Name: GameInitiator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4843496950830554557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4484977687416570415}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5199290928022053212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4484977687416570415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee7fe53d2f9b920ca2337eb4992c5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _loadingScreen: {fileID: 3758791847328295604, guid: 5744788c231903aceac6b786031cc1b4, type: 3}
+  _mainCamera: {fileID: 9193590025190269953, guid: 4a6217e37ec721d6e8fc0374e515846e, type: 3}
+  _eventSystem: {fileID: 3793143745772420572, guid: dae7b5b4016727207a55fbfa8822e805, type: 3}
+  _directionalLight: {fileID: 5292151649905880948, guid: 823e7c49a33ff8d479385bb030d46ca6, type: 3}
+  _gameEvents: {fileID: 2049304160074234336, guid: c9499833c5980ef05b5d6c8c0857b7d1, type: 3}
+  _audioSystem: {fileID: 275375128139159094, guid: 06ef4296fb3335a86b1d06ad93ef81c2, type: 3}
+  _timeManager: {fileID: 3159185349466579712, guid: 8edf694be008cf233931f00165765f2a, type: 3}
+  _controlsManager: {fileID: 4303996449752283626, guid: a19a3cabf7629f01fab40cf673aba345, type: 3}
+  _player: {fileID: 7038997677791233633, guid: 0a57acc76352befcf9a05ea9773ff0d4, type: 3}
+  _enviorement: {fileID: 6868875458072322197, guid: b4dbb6fecc19791cbb59322b5a182b5a, type: 3}
+  _aiBrain: {fileID: 2582073549936003189, guid: 2a7258c113aeb8ba0b29e8ff836edc32, type: 3}
