@@ -59,8 +59,8 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: GameCamera
+  m_DefaultControlScheme: Keyboard
+  m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &4303996449752283626
@@ -75,30 +75,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c632c5f4d62c94d489481db83bfc2723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _move:
-    m_Name: Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 38b301f5-acd8-4445-8c27-e22da1caa79a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  _accelerate:
-    m_Name: Accelerate
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 71b794ea-14a8-4774-a977-8d8237180717
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  _zoom:
-    m_Name: Zoom
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6bdd943d-5b22-469d-9222-32335f0886e1
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0

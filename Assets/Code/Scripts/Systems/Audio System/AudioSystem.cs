@@ -247,11 +247,18 @@ namespace retrobarcelona.Systems.AudioSystem
                             .Where(file => file.ToLower().EndsWith("mp3") || file.ToLower().EndsWith("wav"))
                             .ToList();
 
+            List<string> npcSoundsFiles = FileLoader.GetFilesInDirectory(Directories.NPC_SOUNDS_DIRECTORY)
+                            .Where(file => file.ToLower().EndsWith("mp3") || file.ToLower().EndsWith("wav"))
+                            .ToList();               
+
             foreach (string filePath in musicFiles)
                 AddFileToList(filePath, ref _musicSounds, LOOP);
             
             foreach (string filePath in sfxFiles)
                 AddFileToList(filePath, ref _sfxSounds, DONT_LOOP);
+
+            foreach (string filePath in npcSoundsFiles)
+                AddFileToList(filePath, ref _npcSounds, DONT_LOOP);
         }
 
         private void AddFileToList(string filePath,ref Sound[] list, bool loop)

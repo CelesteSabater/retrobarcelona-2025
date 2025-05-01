@@ -45,13 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadingScreen: {fileID: 3758791847328295604, guid: 5744788c231903aceac6b786031cc1b4, type: 3}
-  _mainCamera: {fileID: 9193590025190269953, guid: 4a6217e37ec721d6e8fc0374e515846e, type: 3}
+  _mainCamera: {fileID: 7385122255633107404, guid: 4a6217e37ec721d6e8fc0374e515846e, type: 3}
   _eventSystem: {fileID: 3793143745772420572, guid: dae7b5b4016727207a55fbfa8822e805, type: 3}
   _directionalLight: {fileID: 5292151649905880948, guid: 823e7c49a33ff8d479385bb030d46ca6, type: 3}
-  _gameEvents: {fileID: 2049304160074234336, guid: c9499833c5980ef05b5d6c8c0857b7d1, type: 3}
   _audioSystem: {fileID: 275375128139159094, guid: 06ef4296fb3335a86b1d06ad93ef81c2, type: 3}
-  _timeManager: {fileID: 3159185349466579712, guid: 8edf694be008cf233931f00165765f2a, type: 3}
   _controlsManager: {fileID: 4303996449752283626, guid: a19a3cabf7629f01fab40cf673aba345, type: 3}
   _player: {fileID: 7038997677791233633, guid: 0a57acc76352befcf9a05ea9773ff0d4, type: 3}
   _enviorement: {fileID: 6868875458072322197, guid: b4dbb6fecc19791cbb59322b5a182b5a, type: 3}
-  _aiBrain: {fileID: 2582073549936003189, guid: 2a7258c113aeb8ba0b29e8ff836edc32, type: 3}

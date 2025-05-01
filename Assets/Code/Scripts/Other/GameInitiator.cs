@@ -6,6 +6,7 @@ using retrobarcelona.Managers.ControlsManager;
 using retrobarcelona.UI;
 using retrobarcelona.Disposable;
 using retrobarcelona.Systems.AudioSystem;
+using retrobarcelona.StateMachine;
 
 namespace retrobarcelona.Other
 {
@@ -13,10 +14,9 @@ namespace retrobarcelona.Other
     {
         [Header("Binder")]
         [SerializeField] private LoadingScreen _loadingScreen;
-        [SerializeField] private GameObject _mainCamera;
+        [SerializeField] private CameraController _mainCamera;
         [SerializeField] private EventSystem _eventSystem;
         [SerializeField] private Light _directionalLight;
-        [SerializeField] private GameEvents _gameEvents;
 
         [Header("Creation")]
         [SerializeField] private AudioSystem _audioSystem;
@@ -51,7 +51,6 @@ namespace retrobarcelona.Other
         private void BindObjects()
         {
             _eventSystem = Instantiate(_eventSystem);
-            _gameEvents = Instantiate(_gameEvents);
             _loadingScreen = Instantiate(_loadingScreen);
             _mainCamera = Instantiate(_mainCamera);
             _directionalLight = Instantiate(_directionalLight);
@@ -80,7 +79,8 @@ namespace retrobarcelona.Other
         private async UniTask BeginGame()
         {
             _audioSystem.StartMusic();
-            _controlsManager.ActivateCameraControls();
+            _controlsManager.ActivateGameControls();
+            _mainCamera.SetFollow(_player);
 
             await UniTask.Yield();
         }

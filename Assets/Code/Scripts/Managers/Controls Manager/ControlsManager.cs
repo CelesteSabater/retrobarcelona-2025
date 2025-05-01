@@ -16,8 +16,8 @@ namespace retrobarcelona.Managers.ControlsManager
         private InputAction _jump;
         private bool _gameControlsControlsAreActive = false;
 
-        public void ActivateCameraControls() => _gameControlsControlsAreActive = true;
-        public void DisableCameraControls() => _gameControlsControlsAreActive = false;
+        public void ActivateGameControls() => _gameControlsControlsAreActive = true;
+        public void DisableGameControls() => _gameControlsControlsAreActive = false;
 
         protected override void Awake()
         {
@@ -29,18 +29,18 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             _move = _playerControls.GameControls.Move;
             _accelerate = _playerControls.GameControls.Accelerate;
-            _zoom = _playerControls.GameControls.Zoom;
+            _jump = _playerControls.GameControls.Jump;
 
             _move.Enable();
             _accelerate.Enable();
-            _zoom.Enable();
+            _jump.Enable();
         }
 
         private void OnDisable()
         {
             _move.Disable();
             _accelerate.Disable();
-            _zoom.Disable();
+            _jump.Disable();
         }
 
         public Vector2 GetMovementDirection()
@@ -63,7 +63,7 @@ namespace retrobarcelona.Managers.ControlsManager
             return _accelerate.ReadValue<float>() > 0.1f ;
         }
 
-        public float GetZoomDirection()
+       /* public float GetZoomDirection()
         {
             float zoomDirection = 0;
 
@@ -73,7 +73,7 @@ namespace retrobarcelona.Managers.ControlsManager
             zoomDirection = _zoom.ReadValue<float>();
 
             return zoomDirection;
-        }
+        }*/
 
         public bool GetIsJumping()
         {

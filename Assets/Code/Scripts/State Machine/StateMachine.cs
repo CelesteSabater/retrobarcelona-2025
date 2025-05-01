@@ -96,6 +96,12 @@ namespace retrobarcelona.StateMachine
         {
             if (!isGrounded(this))
                 return;
+
+            if (rb.totalForce.y >  0)
+                return;
+
+            LastOnGroundTime = 0;
+                
             rb.AddForce(PlayerMovementData.jumpForce * Vector2.up, ForceMode2D.Impulse);
         }
 
