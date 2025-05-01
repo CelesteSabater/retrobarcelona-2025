@@ -50,5 +50,8 @@ MonoBehaviour:
   _directionalLight: {fileID: 5292151649905880948, guid: 823e7c49a33ff8d479385bb030d46ca6, type: 3}
   _audioSystem: {fileID: 275375128139159094, guid: 06ef4296fb3335a86b1d06ad93ef81c2, type: 3}
   _controlsManager: {fileID: 4303996449752283626, guid: a19a3cabf7629f01fab40cf673aba345, type: 3}
-  _player: {fileID: 7038997677791233633, guid: 0a57acc76352befcf9a05ea9773ff0d4, type: 3}
+  _uiManager: {fileID: 5740567963693763975, guid: fbcd57b3f95f961a897f7375901c883e, type: 3}
+  _dialogueSystem: {fileID: 7025553213194381709, guid: b5ca78ec0277a968b809ae8f61373f0a, type: 3}
+  _player: {fileID: 9124033037505853118, guid: 0a57acc76352befcf9a05ea9773ff0d4, type: 3}
   _enviorement: {fileID: 6868875458072322197, guid: b4dbb6fecc19791cbb59322b5a182b5a, type: 3}
+  _gameManager: {fileID: 4939764822387539048, guid: ec6b2f90098567f7a886aafff8fdf4ef, type: 3}

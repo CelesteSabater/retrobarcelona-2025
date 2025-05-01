@@ -83,7 +83,7 @@ namespace retrobarcelona.Systems.AudioSystem
 
             if (music == null)
             {
-                Debug.LogWarning($"Sound: {name} not found!");
+                Debug.LogWarning($"Music: {name} not found!");
                 return;
             }
 
@@ -213,24 +213,12 @@ namespace retrobarcelona.Systems.AudioSystem
             PlaySFX(name, location);
         }
 
-        public void SpeakWordsOnLoop() => StartCoroutine(SpeakWordsOnLoopRoutine(_npcSounds));
-
-        IEnumerator SpeakWordsOnLoopRoutine(Sound[] words)
+        public void SpeakWord()
         {
-            StillSpeaking = true;
-            while (StillSpeaking)
-            {
-                _npcSource.Stop();
-                int i = UnityEngine.Random.Range(0, words.Length - 1);
-                _npcSource.clip = words[i]._clip;
-                _npcSource.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
-                _npcSource.volume = words[i]._volume * _sfxVolume;
-                _npcSource.Play();
-                while (_npcSource.isPlaying)
-                {
-                    yield return null;
-                }
-            }
+            _npcSource.Stop();
+            int i = UnityEngine.Random.Range(0, _npcSounds.Length - 1);
+
+            PlayClipAt(_npcSounds[i]._clip, Vector3.zero, _npcSounds[i]._volume);
         }
 
         #if UNITY_EDITOR
@@ -300,7 +288,7 @@ namespace retrobarcelona.Systems.AudioSystem
                 PrefabUtility.SaveAsPrefabAssetAndConnect(gameObject, prefabPath, InteractionMode.UserAction);
         }
 
-        private string GetPrefabPath() => Directories.SYSTEM_PREFABS_DIRECTORY+"/AudioSystem.prefab";
+        private string GetPrefabPath() => Directories.SYSTEM_PREFABS_DIRECTORY+"/Audio System.prefab";
         #endif
     }
 }

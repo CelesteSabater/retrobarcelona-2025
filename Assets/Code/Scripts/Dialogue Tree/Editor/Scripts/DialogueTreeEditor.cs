@@ -25,7 +25,7 @@ namespace retrobarcelona.DialogueTree.Editor
         [OnOpenAsset]
         public static bool OnOpenAsset(int instanceId, int line)
         {
-            if (Selection.activeObject is DialogueTree.Runtime.DialogueTree)
+            if (Selection.activeObject is retrobarcelona.DialogueTree.Runtime.DialogueTree)
             {
                 OpenWindow();
                 return true;
@@ -73,11 +73,11 @@ namespace retrobarcelona.DialogueTree.Editor
             VisualElement root = rootVisualElement;
 
             // Import UXML
-            VisualTreeAsset visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Project/Dialogue Tree/Editor/UIBuilder/DialogueTreeEditor.uxml");
+            VisualTreeAsset visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Code/Scripts/Dialogue Tree/Editor/UIBuilder/DialogueTreeEditor.uxml");
             visualTree.CloneTree(root);
 
             // StyleSheet
-            StyleSheet styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Project/Dialogue Tree/Editor/UIBuilder/DialogueTreeEditor.uss");
+            StyleSheet styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Code/Scripts/Dialogue Tree/Editor/UIBuilder/DialogueTreeEditor.uss");
             root.styleSheets.Add(styleSheet);
 
             _treeView = root.Q<DialogueTreeView>();
@@ -100,7 +100,7 @@ namespace retrobarcelona.DialogueTree.Editor
 
         private void OnSelectionChange()
         {
-            DialogueTree.Runtime.DialogueTree tree = Selection.activeObject as DialogueTree.Runtime.DialogueTree;
+            retrobarcelona.DialogueTree.Runtime.DialogueTree tree = Selection.activeObject as retrobarcelona.DialogueTree.Runtime.DialogueTree;
 
             if (tree && _treeView != null)
             {

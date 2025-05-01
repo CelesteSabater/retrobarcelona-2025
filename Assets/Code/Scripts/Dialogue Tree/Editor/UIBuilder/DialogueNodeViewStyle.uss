@@ -141,6 +141,12 @@ VisualElement {
     background-color: rgb(255, 111, 89);
 }
 
+.action #input {
+    background-color: rgb(200, 233, 102);
+    width: 100%;
+    min-height: auto;
+}
+
 #node-state {
     position: absolute;
     left: auto;

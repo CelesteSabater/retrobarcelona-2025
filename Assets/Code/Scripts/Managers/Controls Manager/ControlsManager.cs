@@ -14,6 +14,7 @@ namespace retrobarcelona.Managers.ControlsManager
         private InputAction _accelerate;
         private InputAction _zoom;
         private InputAction _jump;
+        private InputAction _interact;
         private bool _gameControlsControlsAreActive = false;
 
         public void ActivateGameControls() => _gameControlsControlsAreActive = true;
@@ -30,10 +31,12 @@ namespace retrobarcelona.Managers.ControlsManager
             _move = _playerControls.GameControls.Move;
             _accelerate = _playerControls.GameControls.Accelerate;
             _jump = _playerControls.GameControls.Jump;
+            _interact = _playerControls.GameControls.Interact;
 
             _move.Enable();
             _accelerate.Enable();
             _jump.Enable();
+            _interact.Enable();
         }
 
         private void OnDisable()
@@ -41,6 +44,7 @@ namespace retrobarcelona.Managers.ControlsManager
             _move.Disable();
             _accelerate.Disable();
             _jump.Disable();
+            _interact.Disable();
         }
 
         public Vector2 GetMovementDirection()
@@ -81,6 +85,14 @@ namespace retrobarcelona.Managers.ControlsManager
                 return false;
             
             return _jump.ReadValue<float>() > 0.1f ;
+        }
+
+        public bool GetIsInteracting()
+        {
+            if (!_gameControlsControlsAreActive)
+                return false;
+            
+            return _interact.ReadValue<float>() > 0.1f ;
         }
     }
 }

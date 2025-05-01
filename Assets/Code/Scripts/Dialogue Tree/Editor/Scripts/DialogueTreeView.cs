@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine.UIElements;
-
 using UnityEditor.Experimental.GraphView;
-
 using UnityEditor;
 using System;
 using System.Linq;
@@ -10,7 +8,6 @@ using retrobarcelona.DialogueTree.Runtime;
 
 namespace retrobarcelona.DialogueTree.Editor
 {
-    
     public class DialogueTreeView : GraphView
     {
         public Action<DialogueNodeView> OnNodeSelected;
@@ -18,7 +15,7 @@ namespace retrobarcelona.DialogueTree.Editor
 
         private UnityEngine.Vector2 worldMousePosition = UnityEngine.Vector2.zero;
 
-        DialogueTree.Runtime.DialogueTree _tree;
+        retrobarcelona.DialogueTree.Runtime.DialogueTree _tree;
         public DialogueTreeView() 
         {
             Insert(0, new GridBackground());
@@ -28,7 +25,7 @@ namespace retrobarcelona.DialogueTree.Editor
             this.AddManipulator(new SelectionDragger());
             this.AddManipulator(new RectangleSelector());
 
-            StyleSheet styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Project/Dialogue Tree/Editor/UIBuilder/DialogueTreeEditor.uss");
+            StyleSheet styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Code/Scripts/Dialogue Tree/Editor/UIBuilder/DialogueTreeEditor.uss");
             styleSheets.Add(styleSheet);
 
             focusable = true;
@@ -55,7 +52,7 @@ namespace retrobarcelona.DialogueTree.Editor
             return GetNodeByGuid(node.GetGUID()) as DialogueNodeView;
         }
 
-        internal void PopulateView(DialogueTree.Runtime.DialogueTree tree)
+        internal void PopulateView(retrobarcelona.DialogueTree.Runtime.DialogueTree tree)
         {
             _tree = tree;
 
@@ -77,7 +74,7 @@ namespace retrobarcelona.DialogueTree.Editor
 
                 foreach (DialogueNode parent in _tree.GetNodes())
                 {
-                    List<DialogueNode> children = DialogueTree.Runtime.DialogueTree.GetChildren(parent);
+                    List<DialogueNode> children = retrobarcelona.DialogueTree.Runtime.DialogueTree.GetChildren(parent);
                     foreach (DialogueNode child in children)
                     {
                         if (child != null)
@@ -168,5 +165,4 @@ namespace retrobarcelona.DialogueTree.Editor
             foreach (var type in types) evt.menu.AppendAction($"[End]/{type.Name}", (a) => CreateNode(type));
         }
     }
-    
 }

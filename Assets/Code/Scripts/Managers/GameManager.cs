@@ -1,9 +1,6 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using retrobarcelona.Utils.Singleton;
-using retrobarcelona.StateMachine;
 
 namespace retrobarcelona.Managers
 {
@@ -11,7 +8,7 @@ namespace retrobarcelona.Managers
     {
         private bool _inDialogue = false;
         private bool _inPause = false;
-        [SerializeField] private StateMachine.StateMachine _stateMachine;
+        private StateMachine.StateMachine _stateMachine;
         public Image fadeImage;
 
         public bool InDialogue() => _inDialogue;
@@ -32,8 +29,13 @@ namespace retrobarcelona.Managers
             CheckState();
         }
 
+        public void SetStateMachine(StateMachine.StateMachine sm) =>_stateMachine = sm;
+
         void CheckState()
         {
+            if (_stateMachine == null)
+                return;
+                
             bool playing = !_inDialogue && !_inPause;
             if (playing)
             {

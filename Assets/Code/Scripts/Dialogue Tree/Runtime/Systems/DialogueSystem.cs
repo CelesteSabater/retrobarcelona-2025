@@ -1,14 +1,22 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using retrobarcelona.Utils.Singleton;
 using UnityEngine;
+using retrobarcelona.Utils.Singleton;
 using retrobarcelona.Managers;
+using retrobarcelona.UI;
 using retrobarcelona.Systems.AudioSystem;
 using retrobarcelona.Managers.ControlsManager;
 
 namespace retrobarcelona.DialogueTree.Runtime
 {
+    [Serializable]
+    public class StyleFormat
+    {
+        public String _styleKey;
+        public String _style;
+    }
+
     public class DialogueSystem : Singleton<DialogueSystem>
     {
         [Header("General")]
@@ -28,7 +36,8 @@ namespace retrobarcelona.DialogueTree.Runtime
         private StartNode _lastBranchStart;
         private NPCData _npcData;
 
-        private const string HTML_ALPHA = "<color=#00000000>";
+        [SerializeField] private StyleFormat[] _styleFormats;
+        private const string HTML_ALPHA = "<alpha=#00>";
         private const float MAX_TYPE_TIME = 0.05f;
 
         public event Action<DialogueTree,NPCData> onSetDialogueNPC;
@@ -120,13 +129,14 @@ namespace retrobarcelona.DialogueTree.Runtime
                 return;
             }
 
-            float yDir = ControlsManager.Instance.GetMovementDirection().y;
-            if (yDir < 0)
+            float direction = ControlsManager.Instance.GetMovementDirection().y;
+
+            if (direction < 0)
             {
                 _moveTimeoutDelta = MoveTimeout;
                 SetActive(_currentAnswer - 1);
             }
-            if (yDir > 0)
+            if (direction > 0)
             {
                 _moveTimeoutDelta = MoveTimeout;
                 SetActive(_currentAnswer + 1);
@@ -135,7 +145,7 @@ namespace retrobarcelona.DialogueTree.Runtime
 
         private void Interact()
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (ControlsManager.Instance.GetIsInteracting() && _interactTimeoutDelta <= 0)
             {
                 _interactTimeoutDelta = InteractTimeout;
                 InteractKey();
@@ -160,7 +170,11 @@ namespace retrobarcelona.DialogueTree.Runtime
             }
             else
             {
-                UIManager.Instance.SetTextDialogue(_currentNode._text);
+                string originalText = _currentNode._text;
+                foreach (var style in _styleFormats)
+                    originalText = originalText.Replace(style._styleKey, style._style);
+
+                UIManager.Instance.SetTextDialogue(originalText);
                 InstantCreateButtons();
                 EndLines();
             }
@@ -171,7 +185,12 @@ namespace retrobarcelona.DialogueTree.Runtime
             string displayedText = UIManager.Instance.GetTextDialogue();
             string text = UIManager.Instance.GetTextDialogue();
             text = text.Split(HTML_ALPHA)[0];
-            bool b = text == _currentNode._text;
+            string originalText = _currentNode._text;
+
+            foreach (var style in _styleFormats)
+                originalText = originalText.Replace(style._styleKey, style._style);
+
+            bool b = text == originalText;
             StartNode start = _currentNode as StartNode;
             if (start != null) 
                 b = b && _buttonsFinished; 
@@ -249,7 +268,6 @@ namespace retrobarcelona.DialogueTree.Runtime
                 if (start._returnOnEndBranch)
                     _lastBranchStart = start;
 
-            AudioSystem.Instance.SpeakWordsOnLoop();
             _currentNode.StartDialogue();
 
             if (_currentNode._npcTheme != "")
@@ -280,7 +298,6 @@ namespace retrobarcelona.DialogueTree.Runtime
                 if (start._returnOnEndBranch)
                     _lastBranchStart = start;
 
-            AudioSystem.Instance.SpeakWordsOnLoop();
             _currentNode.StartDialogue();
 
             if (_currentNode._npcTheme != null)
@@ -343,17 +360,37 @@ namespace retrobarcelona.DialogueTree.Runtime
         IEnumerator TypeLine()
         {
             string originalText = _currentNode._text; 
-            string displayedText = ""; 
-            int alphaIndex = 0;
+            string displayedText = "";
+            bool isTag = false;
 
-            foreach (char c in originalText.ToCharArray())
+            foreach (var style in _styleFormats)
             {
-                //UIManager.Instance.AddLetterDialogue(c);
-                alphaIndex++;
-                UIManager.Instance.SetTextDialogue(originalText);
-                displayedText = UIManager.Instance.GetTextDialogue().Insert(alphaIndex, HTML_ALPHA);
-                UIManager.Instance.SetTextDialogue(displayedText);
-                yield return new WaitForSeconds(MAX_TYPE_TIME/textSpeed);
+                originalText = originalText.Replace(style._styleKey, style._style);
+            }
+
+            for(int i = 0; i < originalText.Length; i++)
+            {
+                String firstHalf = originalText.Substring(0, i+1);
+                String secondHalf = originalText.Substring(i+1);
+                secondHalf = secondHalf.Replace(">", ">"+HTML_ALPHA);
+                secondHalf = secondHalf.Replace("<sprite=0>", "<sprite=0 color=#FFFFFF00>");
+                secondHalf = secondHalf.Replace("<sprite=1>", "<sprite=1 color=#FFFFFF00>");
+                secondHalf = secondHalf.Replace("<sprite=2>", "<sprite=2 color=#FFFFFF00>");
+                secondHalf = secondHalf.Replace("<sprite=3>", "<sprite=3 color=#FFFFFF00>");
+
+                if (originalText[i] == '<')
+                    isTag = true;
+                else if (originalText[i] == '>')
+                    isTag = false; 
+
+                displayedText = firstHalf + HTML_ALPHA + secondHalf;
+
+                if (!isTag)
+                {
+                    AudioSystem.Instance.SpeakWord();
+                    UIManager.Instance.SetTextDialogue(displayedText);
+                    yield return new WaitForSeconds(MAX_TYPE_TIME/textSpeed);
+                }   
             }
 
             EndLines();

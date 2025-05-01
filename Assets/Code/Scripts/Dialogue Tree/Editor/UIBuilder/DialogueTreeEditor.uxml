@@ -3,24 +3,24 @@
     <uie:Toolbar>
         <uie:ToolbarMenu tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" text="Assets" />
     </uie:Toolbar>
-    <DialogueTree.Editor.SplitView fixed-pane-initial-dimension="200">
+    <retrobarcelona.DialogueTree.Editor.SplitView fixed-pane-initial-dimension="200">
         <ui:VisualElement name="left-panel" style="flex-grow: 1;">
-            <DialogueTree.Editor.SplitView orientation="Vertical" fixed-pane-initial-dimension="255">
+            <retrobarcelona.DialogueTree.Editor.SplitView orientation="Vertical" fixed-pane-initial-dimension="255">
                 <ui:VisualElement name="blackboard" style="flex-grow: 1;">
                     <ui:Label tabindex="-4" text="Blackboard" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="-unity-text-outline-color: rgb(255, 255, 255); background-color: rgb(37, 37, 37); color: rgb(255, 255, 255); -unity-text-align: upper-left; border-left-color: rgb(255, 0, 255); border-right-color: rgb(255, 0, 255); border-top-color: rgb(255, 0, 255); border-bottom-color: rgb(255, 0, 255);" />
                     <ui:IMGUIContainer style="width: 100%; height: 100%;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="inspector-container" style="flex-grow: 1; flex-shrink: 0;">
                     <ui:Label tabindex="-1" text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="-unity-text-outline-color: rgb(255, 255, 255); background-color: rgb(37, 37, 37); color: rgb(255, 255, 255); -unity-text-align: upper-left; border-left-color: rgb(255, 0, 255); border-right-color: rgb(255, 0, 255); border-top-color: rgb(255, 0, 255); border-bottom-color: rgb(255, 0, 255);" />
-                    <DialogueTree.Editor.DialogueInspectorView style="width: 100%; height: 100%;" />
+                    <retrobarcelona.DialogueTree.Editor.DialogueInspectorView style="width: 100%; height: 100%;" />
                 </ui:VisualElement>
-            </DialogueTree.Editor.SplitView>
+            </retrobarcelona.DialogueTree.Editor.SplitView>
         </ui:VisualElement>
         <ui:VisualElement name="right-panel" style="flex-grow: 1;">
             <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-shrink: 0;">
                 <ui:Label tabindex="-1" text="TreeView" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="-unity-text-outline-color: rgb(255, 255, 255); background-color: rgb(37, 37, 37); color: rgb(255, 255, 255); -unity-text-align: upper-left; border-left-color: rgb(255, 0, 255); border-right-color: rgb(255, 0, 255); border-top-color: rgb(255, 0, 255); border-bottom-color: rgb(255, 0, 255);" />
-                <DialogueTree.Editor.DialogueTreeView focusable="true" style="width: 100%; height: 100%;" />
+                <retrobarcelona.DialogueTree.Editor.DialogueTreeView focusable="true" style="width: 100%; height: 100%;" />
             </ui:VisualElement>
         </ui:VisualElement>
-    </DialogueTree.Editor.SplitView>
+    </retrobarcelona.DialogueTree.Editor.SplitView>
 </ui:UXML>

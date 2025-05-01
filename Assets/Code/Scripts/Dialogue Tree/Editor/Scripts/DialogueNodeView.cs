@@ -1,9 +1,13 @@
 using System;
 using UnityEngine;
+
 using UnityEditor.Experimental.GraphView;
+
 using UnityEngine.UIElements;
 using retrobarcelona.DialogueTree.Runtime;
+
 using UnityEditor.UIElements;
+
 using UnityEditor;
 
 namespace retrobarcelona.DialogueTree.Editor
@@ -15,7 +19,7 @@ namespace retrobarcelona.DialogueTree.Editor
         public DialogueNode _node;
         [SerializeField] private Port _input, _output;
 
-        public DialogueNodeView(DialogueNode node) : base("Assets/Project/Dialogue Tree/Editor/UIBuilder/DialogueNodeView.uxml")
+        public DialogueNodeView(DialogueNode node) : base("Assets/Code/Scripts/Dialogue Tree/Editor/UIBuilder/DialogueNodeView.uxml")
         {
             _node = node;
             title = node.name;
