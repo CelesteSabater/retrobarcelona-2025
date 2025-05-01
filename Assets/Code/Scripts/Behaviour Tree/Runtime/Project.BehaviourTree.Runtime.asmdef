@@ -1,0 +1,17 @@
+{
+    "name": "Project.BehaviourTree.Runtime",
+    "rootNamespace": "Project.BehaviourTree.Runtime",
+    "references": [
+        "GUID:dba027674ef8a64448b007c58d17f114",
+        "GUID:d525ad6bd40672747bde77962f1c401e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
