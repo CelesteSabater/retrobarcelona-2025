@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Enum para clasificar el tipo de nota que se toca
+// Enum que define los diferentes tipos de notas (Correcta, Casi Correcta, Casi Incorrecta, Incorrecta)
 public enum NoteHit
 {
     Correct,
@@ -11,7 +11,7 @@ public enum NoteHit
     Incorrect
 }
 
-// Enum para clasificar acciones de karma (Temporales)
+// Enum que clasifica las acciones de karma (Honor y Odio)
 public enum KarmaHit
 {
     Honor,
@@ -23,14 +23,16 @@ public enum KarmaHit
 public class SistemaDePuntos : MonoBehaviour
 {
     [Header("Sistema de Puntos - Planos")]
+    // Variables para almacenar los puntos por cada tipo de acción (nota)
     private int totalPuntos;
     private int puntosPorNotaCorrecta;
     private int puntosPorNotaCasiCorrecta;
     private int puntosPorNotaCasiIncorrecta;
     private int puntosPorNotaIncorrecta;
-    private int rachaPerfecta = 0;
+    private int rachaPerfecta = 0; // Para llevar el control de rachas perfectas
 
     [Header("Sistema de Puntos - Karma")]
+    // Variables para almacenar los puntos de karma
     private int puntosHonor;
     private int puntosHonorMenor;
     private int PuntosOdio;
@@ -39,14 +41,13 @@ public class SistemaDePuntos : MonoBehaviour
 
     void Start()
     {
-        // Puntaje
+        // Inicializa los valores predeterminados para los puntos y karma
         totalPuntos = 0;
         puntosPorNotaCorrecta = 50;
         puntosPorNotaCasiCorrecta = 25;
         puntosPorNotaCasiIncorrecta = 10;
         puntosPorNotaIncorrecta = -50;
 
-        // Karma
         karmaToal = 0;
         puntosHonor = 10;
         puntosHonorMenor = 5;
@@ -56,37 +57,27 @@ public class SistemaDePuntos : MonoBehaviour
 
     void Update()
     {
-        // Simulación de notas (Temporales)
-        if (Input.GetKeyDown(KeyCode.Q))
-            CalcularPuntos(NoteHit.Correct);
-        if (Input.GetKeyDown(KeyCode.W))
-            CalcularPuntos(NoteHit.AlmostCorrect);
-            if (Input.GetKeyDown(KeyCode.E))
-            CalcularPuntos(NoteHit.AlmostIncorrect);
-        if (Input.GetKeyDown(KeyCode.R))
-            CalcularPuntos(NoteHit.Incorrect);
+        // Simula las acciones de puntos y karma con teclas para pruebas (temporal)
+        if (Input.GetKeyDown(KeyCode.Q)) CalcularPuntos(NoteHit.Correct);
+        if (Input.GetKeyDown(KeyCode.W)) CalcularPuntos(NoteHit.AlmostCorrect);
+        if (Input.GetKeyDown(KeyCode.E)) CalcularPuntos(NoteHit.AlmostIncorrect);
+        if (Input.GetKeyDown(KeyCode.R)) CalcularPuntos(NoteHit.Incorrect);
 
-        // Simulación de karma (Temporales)
-        if (Input.GetKeyDown(KeyCode.Y))
-            CalcularKarma(KarmaHit.Honor);
-        if (Input.GetKeyDown(KeyCode.U))
-            CalcularKarma(KarmaHit.HonorMenor);
-        if (Input.GetKeyDown(KeyCode.I))
-            CalcularKarma(KarmaHit.Odio);
-        if (Input.GetKeyDown(KeyCode.O))
-            CalcularKarma(KarmaHit.OdioMenor);
+        if (Input.GetKeyDown(KeyCode.Y)) CalcularKarma(KarmaHit.Honor);
+        if (Input.GetKeyDown(KeyCode.U)) CalcularKarma(KarmaHit.HonorMenor);
+        if (Input.GetKeyDown(KeyCode.I)) CalcularKarma(KarmaHit.Odio);
+        if (Input.GetKeyDown(KeyCode.O)) CalcularKarma(KarmaHit.OdioMenor);
 
-        // Mostrar estado
+        // Mostrar estado de puntos y karma al presionar P
         if (Input.GetKeyDown(KeyCode.P))
         {
             Debug.Log("Total Puntos: " + totalPuntos);
             Debug.Log("Racha Correcta: " + rachaPerfecta);
             Debug.Log("Karma Total: " + karmaToal);
         }
-            
-        
     }
 
+    // Inicializa los puntos por cada tipo de nota (desde la UI o otro sistema)
     public void InicializarSistemaDePuntos(int puntosPorNotaCorrecta, int puntosPorNotaCasiCorrecta, int puntosPorNotaIncorrecta, int puntosPorNotaCasiIncorrecta)
     {
         this.puntosPorNotaCorrecta = puntosPorNotaCorrecta;
@@ -95,6 +86,7 @@ public class SistemaDePuntos : MonoBehaviour
         this.puntosPorNotaIncorrecta = puntosPorNotaIncorrecta;
     }
 
+    // Inicializa los puntos de karma (desde la UI o otro sistema)
     public void InicializarSistemaDeKarma(int puntosHonor, int puntosHonorMenor, int PuntosOdio, int PuntosOdioMenor)
     {
         this.puntosHonor = puntosHonor;
@@ -103,23 +95,25 @@ public class SistemaDePuntos : MonoBehaviour
         this.PuntosOdioMenor = PuntosOdioMenor;
     }
 
+    // Método para agregar puntos al total
     public void AgregarPuntos(int puntos)
     {
         totalPuntos += puntos;
     }
 
-// Este método es temporal, se cambiara por la selcceion de "Verosos" de la UI
+    // Método temporal para agregar karma (se cambiará en futuras versiones)
     public void AgregarKarma(int puntos)
     {
-        
         karmaToal += puntos;
 
+        // Limitar el karma entre -100 y 100
         if (karmaToal > 100)
             karmaToal = 100;
         else if (karmaToal < -100)
             karmaToal = -100;
     }
 
+    // Calcula los puntos según el tipo de nota (Correcta, Casi Correcta, Incorrecta, etc.)
     public void CalcularPuntos(NoteHit nota)
     {
         switch (nota)
@@ -142,7 +136,8 @@ public class SistemaDePuntos : MonoBehaviour
                 break;
         }
     }
-    //Este método es temporal, se cambiara por la selcceion de "Verosos" de la UI
+
+    // Calcula el karma según la acción realizada (Honor, Odio, etc.)
     public void CalcularKarma(KarmaHit karma)
     {
         switch (karma)
@@ -161,8 +156,9 @@ public class SistemaDePuntos : MonoBehaviour
                 break;
         }
     }
+
+    // Métodos de acceso para obtener valores
     public int GetKarma() => karmaToal;
     public int TotalPuntos => totalPuntos;
     public int RachaPerfecta => rachaPerfecta;
-    
 }
