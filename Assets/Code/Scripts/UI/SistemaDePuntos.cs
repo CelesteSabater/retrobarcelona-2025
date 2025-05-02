@@ -108,12 +108,14 @@ public class SistemaDePuntos : MonoBehaviour
 // Este método es temporal, se cambiara por la selcceion de "Verosos" de la UI
     public void AgregarKarma(int puntos)
     {
+        
         karmaToal += puntos;
 
         if (karmaToal > 100)
             karmaToal = 100;
         else if (karmaToal < -100)
             karmaToal = -100;
+        float valorBarra = (karmaToal + 100f) / 200f;
     }
 
     public void CalcularPuntos(NoteHit nota)
@@ -153,4 +155,6 @@ public class SistemaDePuntos : MonoBehaviour
                 break;
         }
     }
+    public int GetKarma() => karmaToal;
+    
 }
