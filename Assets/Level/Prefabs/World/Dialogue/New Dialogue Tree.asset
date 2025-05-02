@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5620727487350789358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fae897595d6827d4e938ca01d28c0e13, type: 3}
-  m_Name: PlayerText
-  m_EditorClassIdentifier: 
-  _text: "\xBFPuedes repetir?"
-  _guid: 6cfb305cb6e956801a15fd578c6bd47b
-  _position: {x: 134.62013, y: 325.99698}
-  _blackboard:
-    _npcData: {fileID: 0}
-    _animator: {fileID: 0}
-  _startDialogueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _endDialogueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _npcTheme: 
-  _child: {fileID: 8699654392708524396}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,9 +18,8 @@ MonoBehaviour:
   - {fileID: 2229963810768443942}
   - {fileID: 8837428416895282786}
   - {fileID: 5111036187819938263}
-  - {fileID: -5620727487350789358}
   - {fileID: 645625853122071138}
-  - {fileID: 8699654392708524396}
+  - {fileID: 816700830973661975}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -65,7 +38,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: 
   _guid: 557479b1b865aad869d8d16165721147
-  _position: {x: 136.6883, y: 661.6001}
+  _position: {x: 138.39996, y: 511.20007}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -76,6 +49,35 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _npcTheme: 
+--- !u!114 &816700830973661975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "\xA1Te reto a una pelea de gallos!"
+  _guid: f691f6a770b1bc1499b2d688ea590c9f
+  _position: {x: 136.79999, y: 318.4}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 645625853122071138}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _maxScore: 800
+  _karma: -10
 --- !u!114 &904456460139664722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,32 +155,6 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 2229963810768443942}
---- !u!114 &8699654392708524396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee20d7c402de566489d0d1d4a22e1dde, type: 3}
-  m_Name: Test
-  m_EditorClassIdentifier: 
-  _text: 
-  _guid: babcdffd2a2d40ddd849b438599d4061
-  _position: {x: 137.86346, y: 507.41815}
-  _blackboard:
-    _npcData: {fileID: 0}
-    _animator: {fileID: 0}
-  _startDialogueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _endDialogueEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _npcTheme: 
-  _child: {fileID: 645625853122071138}
 --- !u!114 &8837428416895282786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,5 +182,5 @@ MonoBehaviour:
   _npcTheme: 
   _choices:
   - {fileID: 5111036187819938263}
-  - {fileID: -5620727487350789358}
+  - {fileID: 816700830973661975}
   _returnOnEndBranch: 1

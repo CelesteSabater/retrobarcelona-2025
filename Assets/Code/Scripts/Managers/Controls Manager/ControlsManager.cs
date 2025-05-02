@@ -115,32 +115,32 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            
-            return _lane1.ReadValue<float>() > 0.1f ;
+            return Input.GetKeyDown(KeyCode.Q);
+            //return _lane1.ReadValue<float>() > 0.1f ;
         }
 
         public bool GetIsLane2()
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            
-            return _lane2.ReadValue<float>() > 0.1f ;
+            return Input.GetKeyDown(KeyCode.W);
+            //return _lane2.ReadValue<float>() > 0.1f ;
         }
 
         public bool GetIsLane3()
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            
-            return _lane3.ReadValue<float>() > 0.1f ;
+            return Input.GetKeyDown(KeyCode.E);
+            //return _lane3.ReadValue<float>() > 0.1f ;
         }
 
         public bool GetIsLane4()
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            
-            return _lane4.ReadValue<float>() > 0.1f ;
+            return Input.GetKeyDown(KeyCode.R);
+            //return _lane4.ReadValue<float>() > 0.1f ;
         }
     }
 }

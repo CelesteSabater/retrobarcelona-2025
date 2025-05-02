@@ -19,6 +19,7 @@ namespace retrobarcelona.MusicSystem
         }
 
         async void StartSong(TextAsset noteMap) {
+            float time = 1.0f;
             if (noteMap == null)
             {
                 Debug.LogWarning("Song not found!");
@@ -26,15 +27,20 @@ namespace retrobarcelona.MusicSystem
             }
 
             SongData data = JsonUtility.FromJson<SongData>(noteMap.text);
+            AudioSystem.Instance.PlayMusic(data.songName);
             foreach (NoteData note in data.notes) {
                 await SpawnNote(note.lane, note.time);
             }
-            AudioSystem.Instance.PlayMusic(data.songName);
+            
+            await UniTask.Delay(TimeSpan.FromSeconds(time));
+            GameEvents.current.SetDialogue(true);
         }
      
         private async UniTask SpawnNote(int lane, float time) {
             await UniTask.Delay(TimeSpan.FromSeconds(time));
-            Instantiate(_notePrefabs[lane], _lanes[lane].position, Quaternion.identity);
+            GameObject note = Instantiate(_notePrefabs[lane], _lanes[lane].position, Quaternion.identity).gameObject;
+            note.transform.SetParent(_lanes[lane]);
+            note.transform.localPosition = Vector3.zero;
         }
     }
 }

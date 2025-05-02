@@ -288,7 +288,7 @@ namespace retrobarcelona.Systems.AudioSystem
                 PrefabUtility.SaveAsPrefabAssetAndConnect(gameObject, prefabPath, InteractionMode.UserAction);
         }
 
-        private string GetPrefabPath() => Directories.SYSTEM_PREFABS_DIRECTORY+"/Audio System.prefab";
+        private string GetPrefabPath() => Directories.SYSTEM_PREFABS_DIRECTORY+"/AudioSystem.prefab";
         #endif
     }
 }

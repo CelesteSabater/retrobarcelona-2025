@@ -1,5 +1,7 @@
+using retrobarcelona.Managers;
 using retrobarcelona.Managers.ControlsManager;
 using retrobarcelona.MusicSystem;
+using retrobarcelona.Systems.AudioSystem;
 using UnityEngine;
 
 public class HitDetector : MonoBehaviour
@@ -9,6 +11,13 @@ public class HitDetector : MonoBehaviour
     [SerializeField] private float _goodRange = 0.1f; 
     [SerializeField] private float _badRange = 0.5f; 
     [SerializeField] private Transform[] hitZones;   
+    private bool _inDialogue = true;
+    private void SetInDialogue(bool value) => _inDialogue = value;
+
+    private void Start()
+    {
+        GameEvents.current.onSetDialogue += SetInDialogue;
+    }
 
     void Update() 
     {
@@ -17,6 +26,8 @@ public class HitDetector : MonoBehaviour
 
     void DetectHits()
     {
+        if (_inDialogue) return;
+        
         if (ControlsManager.Instance.GetIsLane1())  { ProcessHit(0); }
         if (ControlsManager.Instance.GetIsLane2())  { ProcessHit(1); }
         if (ControlsManager.Instance.GetIsLane3())  { ProcessHit(2); }
@@ -55,6 +66,7 @@ public class HitDetector : MonoBehaviour
 
             Destroy(hit.gameObject);
             Instantiate(effect, hitZones[lane].position, Quaternion.identity);
+            AudioSystem.Instance.PlaySFX("GuitarSound");
             //GameManager.Instance.AddScore(hitScore); // Asume que hay un GameManager
             hitRegistered = true;
             break; 
@@ -63,6 +75,7 @@ public class HitDetector : MonoBehaviour
         if (!hitRegistered)
         {
             Debug.Log("Miss!");
+            AudioSystem.Instance.PlaySFX("BrokenGuitarSound");
             //GameManager.Instance.MissNote();
         }
     }

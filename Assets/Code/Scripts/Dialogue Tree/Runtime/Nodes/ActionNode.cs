@@ -6,12 +6,19 @@ namespace retrobarcelona.DialogueTree.Runtime
     public abstract class ActionNode : DialogueNode
     {
         [HideInInspector] public DialogueNode _child;
-        protected abstract void Action();
+        protected abstract void StartAction();
+        protected abstract void EndAction();
         
+        public override void StartDialogue()
+        {
+            base.StartDialogue();
+            StartAction();
+        }
+
         public override void EndDialogue()
         {
             base.EndDialogue();
-            Action();
+            EndAction();
         }
 
         public override DialogueNode Clone()

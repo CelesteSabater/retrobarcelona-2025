@@ -7,6 +7,7 @@ using retrobarcelona.Managers;
 using retrobarcelona.UI;
 using retrobarcelona.Systems.AudioSystem;
 using retrobarcelona.Managers.ControlsManager;
+using DialogueTree.Runtime;
 
 namespace retrobarcelona.DialogueTree.Runtime
 {
@@ -32,7 +33,12 @@ namespace retrobarcelona.DialogueTree.Runtime
         public float _moveTimeoutDelta;
         
         private bool _inDialogue = true;
-        private void SetInDialogue(bool value) => _inDialogue = value;
+        private void SetInDialogue(bool value) 
+        {
+            _inDialogue = value;
+            if (_inDialogue)
+                NextLine();
+        }
 
         private DialogueTree _dialogueTree;
         private DialogueNode _currentNode;
@@ -205,7 +211,9 @@ namespace retrobarcelona.DialogueTree.Runtime
         void NextLine()
         {
             switch (_currentNode)
-            {                
+            {         
+                case Song _node:
+                    break;       
                 case EndNode _node:
                     EndDialogue(_node);
                     break;

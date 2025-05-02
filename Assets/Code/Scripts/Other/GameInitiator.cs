@@ -24,8 +24,9 @@ namespace retrobarcelona.Other
         [SerializeField] private UIManager _uiManager;
         [SerializeField] private DialogueSystem _dialogueSystem;
         [SerializeField] private GameObject _enviorement;
-        [SerializeField] private SongLoader _songLoader;
         [SerializeField] private NoteSpawner _noteSpawner;
+        [SerializeField] private DialogueTree.Runtime.DialogueTree _dialogueTree;
+        [SerializeField] private DialogueTree.Runtime.NPCData _npcData;
 
         private int _currentStep, _maxSteps;
 
@@ -72,7 +73,6 @@ namespace retrobarcelona.Other
             _controlsManager = Instantiate(_controlsManager);
             _uiManager = Instantiate(_uiManager);
             _dialogueSystem = Instantiate(_dialogueSystem);
-            _songLoader = Instantiate(_songLoader);
             _noteSpawner = Instantiate(_noteSpawner);
 
             await UniTask.Yield();
@@ -87,7 +87,7 @@ namespace retrobarcelona.Other
         {
             _audioSystem.StartMusic();
             _controlsManager.ActivateGameControls();
-            _songLoader.StartTest();
+            _dialogueSystem.StartDialogue(_dialogueTree, _npcData);
 
             await UniTask.Yield();
         }

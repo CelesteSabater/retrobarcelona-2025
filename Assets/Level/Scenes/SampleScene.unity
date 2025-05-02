@@ -175,6 +175,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5199290928022053212, guid: e7eda830bf7ded76999ff8df01a62be7, type: 3}
+      propertyPath: _npcData
+      value: 
+      objectReference: {fileID: 11400000, guid: d56f1e762fce367e2b13a800d88dde32, type: 2}
+    - target: {fileID: 5199290928022053212, guid: e7eda830bf7ded76999ff8df01a62be7, type: 3}
       propertyPath: _songLoader
       value: 
       objectReference: {fileID: 3063135915762684477, guid: f357cc2b4ff50024a9428f052f5c79df, type: 3}
@@ -182,6 +186,10 @@ PrefabInstance:
       propertyPath: _noteSpawner
       value: 
       objectReference: {fileID: 5087055395422185774, guid: b418f96bcce46dc4bbdb7d20cdd14b1a, type: 3}
+    - target: {fileID: 5199290928022053212, guid: e7eda830bf7ded76999ff8df01a62be7, type: 3}
+      propertyPath: _dialogueTree
+      value: 
+      objectReference: {fileID: 11400000, guid: f27c2a434a6a92623875edd2ebe75d29, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
