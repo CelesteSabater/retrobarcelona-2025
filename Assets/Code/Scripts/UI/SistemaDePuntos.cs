@@ -26,9 +26,9 @@ public class SistemaDePuntos : MonoBehaviour
     private int totalPuntos;
     private int puntosPorNotaCorrecta;
     private int puntosPorNotaCasiCorrecta;
-    private int puntosPorNotaCasiInCorrecta;
+    private int puntosPorNotaCasiIncorrecta;
     private int puntosPorNotaIncorrecta;
-    private int rachaCorrecta = 0;
+    private int rachaPerfecta = 0;
 
     [Header("Sistema de Puntos - Karma")]
     private int puntosHonor;
@@ -43,7 +43,7 @@ public class SistemaDePuntos : MonoBehaviour
         totalPuntos = 0;
         puntosPorNotaCorrecta = 50;
         puntosPorNotaCasiCorrecta = 25;
-        puntosPorNotaCasiInCorrecta = 10;
+        puntosPorNotaCasiIncorrecta = 10;
         puntosPorNotaIncorrecta = -50;
 
         // Karma
@@ -61,6 +61,8 @@ public class SistemaDePuntos : MonoBehaviour
             CalcularPuntos(NoteHit.Correct);
         if (Input.GetKeyDown(KeyCode.W))
             CalcularPuntos(NoteHit.AlmostCorrect);
+            if (Input.GetKeyDown(KeyCode.E))
+            CalcularPuntos(NoteHit.AlmostIncorrect);
         if (Input.GetKeyDown(KeyCode.D))
             CalcularPuntos(NoteHit.Incorrect);
 
@@ -78,17 +80,18 @@ public class SistemaDePuntos : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             Debug.Log("Total Puntos: " + totalPuntos);
-            Debug.Log("Racha Correcta: " + rachaCorrecta);
+            Debug.Log("Racha Correcta: " + rachaPerfecta);
             Debug.Log("Karma Total: " + karmaToal);
         }
             
         
     }
 
-    public void InicializarSistemaDePuntos(int puntosPorNotaCorrecta, int puntosPorNotaCasiCorrecta, int puntosPorNotaIncorrecta)
+    public void InicializarSistemaDePuntos(int puntosPorNotaCorrecta, int puntosPorNotaCasiCorrecta, int puntosPorNotaIncorrecta, int puntosPorNotaCasiIncorrecta)
     {
         this.puntosPorNotaCorrecta = puntosPorNotaCorrecta;
         this.puntosPorNotaCasiCorrecta = puntosPorNotaCasiCorrecta;
+        this.puntosPorNotaCasiIncorrecta = puntosPorNotaCasiIncorrecta;
         this.puntosPorNotaIncorrecta = puntosPorNotaIncorrecta;
     }
 
@@ -124,15 +127,19 @@ public class SistemaDePuntos : MonoBehaviour
         {
             case NoteHit.Correct:
                 AgregarPuntos(puntosPorNotaCorrecta);
-                rachaCorrecta++;
+                rachaPerfecta++;
                 break;
             case NoteHit.AlmostCorrect:
                 AgregarPuntos(puntosPorNotaCasiCorrecta);
-                rachaCorrecta = 0;
+                rachaPerfecta = 0;
+                break;
+            case NoteHit.AlmostIncorrect:
+                AgregarPuntos(puntosPorNotaCasiIncorrecta);
+                rachaPerfecta = 0;
                 break;
             case NoteHit.Incorrect:
                 AgregarPuntos(puntosPorNotaIncorrecta);
-                rachaCorrecta = 0;
+                rachaPerfecta = 0;
                 break;
         }
     }
