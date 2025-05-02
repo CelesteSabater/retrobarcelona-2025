@@ -33,17 +33,14 @@ namespace retrobarcelona.DialogueTree.Runtime
         public float _moveTimeoutDelta;
         
         private bool _inDialogue = true;
-        private void SetInDialogue(bool value) 
-        {
-            _inDialogue = value;
-            if (_inDialogue)
-                NextLine();
-        }
+        private void SetInDialogue(bool value) => _inDialogue = value;
 
         private DialogueTree _dialogueTree;
         private DialogueNode _currentNode;
         private StartNode _lastBranchStart;
         private NPCData _npcData;
+
+        private bool _songFinished = false;
 
         [SerializeField] private StyleFormat[] _styleFormats;
         private const string HTML_ALPHA = "<alpha=#00>";
@@ -60,9 +57,22 @@ namespace retrobarcelona.DialogueTree.Runtime
         {
             ClearUI();
             GameEvents.current.onSetDialogue += SetInDialogue;
+            GameEvents.current.onSongFinished += SongFinished;
 
             _interactTimeoutDelta = InteractTimeout;
             _moveTimeoutDelta = MoveTimeout;
+        }
+
+        private void OnDestroy()
+        {
+            GameEvents.current.onSetDialogue -= SetInDialogue;
+            GameEvents.current.onSongFinished -= SongFinished;
+        }
+
+        void SongFinished()
+        {
+            _songFinished = true;
+            NextLine();
         }
 
         private void Update()
@@ -213,6 +223,7 @@ namespace retrobarcelona.DialogueTree.Runtime
             switch (_currentNode)
             {         
                 case Song _node:
+
                     break;       
                 case EndNode _node:
                     EndDialogue(_node);

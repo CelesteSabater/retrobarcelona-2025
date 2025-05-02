@@ -19,7 +19,7 @@ namespace retrobarcelona.MusicSystem
         }
 
         async void StartSong(TextAsset noteMap) {
-            float time = 1.0f;
+            float time = 8.0f;
             if (noteMap == null)
             {
                 Debug.LogWarning("Song not found!");
@@ -33,7 +33,7 @@ namespace retrobarcelona.MusicSystem
             }
             
             await UniTask.Delay(TimeSpan.FromSeconds(time));
-            GameEvents.current.SetDialogue(true);
+            GameEvents.current.SongFinished();
         }
      
         private async UniTask SpawnNote(int lane, float time) {

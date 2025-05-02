@@ -14,9 +14,11 @@ namespace retrobarcelona.Managers
         public void SetDialogue(bool value) => onSetDialogue?.Invoke(value);
         #endregion
 
-        #region DIALOGUE
+        #region SONGS
         public event Action<TextAsset> onStartSong;
         public void StartSong(TextAsset song) => onStartSong?.Invoke(song);
+        public event Action onSongFinished;
+        public void SongFinished() => onSongFinished?.Invoke();
         #endregion
     }
 }
