@@ -121,8 +121,6 @@ namespace retrobarcelona.DialogueTree.Runtime
 
         private void EndLines()
         {
-            //SetActive(0);
-            AudioSystem.Instance.StillSpeaking = false;
             _currentNode.EndDialogue();
         }
 
@@ -364,6 +362,17 @@ namespace retrobarcelona.DialogueTree.Runtime
             EndLines();
         }
 
+        public void TypeLine(string text)
+        {
+            if (text == null)
+                return;
+            
+            if (text == "")
+                return;
+                
+            StartCoroutine(TypeLine2(text));
+        }
+
         IEnumerator TypeLineButton(GameObject go, DialogueNode node)
         {
             string originalText = node._text; 
@@ -419,6 +428,42 @@ namespace retrobarcelona.DialogueTree.Runtime
             }
 
             EndLines();
+        }
+
+        IEnumerator TypeLine2(string originalText)
+        {
+            string displayedText = "";
+            bool isTag = false;
+
+            foreach (var style in _styleFormats)
+            {
+                originalText = originalText.Replace(style._styleKey, style._style);
+            }
+
+            for(int i = 0; i < originalText.Length; i++)
+            {
+                String firstHalf = originalText.Substring(0, i+1);
+                String secondHalf = originalText.Substring(i+1);
+                secondHalf = secondHalf.Replace(">", ">"+HTML_ALPHA);
+                secondHalf = secondHalf.Replace("<sprite=0>", "<sprite=0 color=#FFFFFF00>");
+                secondHalf = secondHalf.Replace("<sprite=1>", "<sprite=1 color=#FFFFFF00>");
+                secondHalf = secondHalf.Replace("<sprite=2>", "<sprite=2 color=#FFFFFF00>");
+                secondHalf = secondHalf.Replace("<sprite=3>", "<sprite=3 color=#FFFFFF00>");
+
+                if (originalText[i] == '<')
+                    isTag = true;
+                else if (originalText[i] == '>')
+                    isTag = false; 
+
+                displayedText = firstHalf + HTML_ALPHA + secondHalf;
+
+                if (!isTag)
+                {
+                    AudioSystem.Instance.SpeakWord();
+                    UIManager.Instance.SetTextDialogue(displayedText);
+                    yield return new WaitForSeconds(MAX_TYPE_TIME/textSpeed);
+                }   
+            }
         }
 
         IEnumerator StartDelay(DialogueTree dialogueTree, float time)

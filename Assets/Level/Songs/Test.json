@@ -1,7 +1,7 @@
 {
     "songName": "Efficiency",
     "notes": [
-       { "time": 1.0, "lane": 0 },
+       { "time": 1.0, "lane": 0, "text": "Hola me cago tu vida."},
        { "time": 0.0, "lane": 2 },
        
        { "time": 1.0, "lane": 1 },
@@ -36,7 +36,7 @@
        { "time": 0.5, "lane": 2 },
        { "time": 0.5, "lane": 3 },
        
-       { "time": 1.0, "lane": 1 },
+       { "time": 1.0, "lane": 1, "text": "Hola me cago tu vida 2." },
        { "time": 0.5, "lane": 2 },
        { "time": 0.5, "lane": 1 },
        { "time": 0.1, "lane": 2 },

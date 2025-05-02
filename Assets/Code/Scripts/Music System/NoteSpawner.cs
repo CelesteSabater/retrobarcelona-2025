@@ -5,6 +5,7 @@ using retrobarcelona.Managers;
 using retrobarcelona.Systems.AudioSystem;
 using UnityEngine.SocialPlatforms.Impl;
 using Cysharp.Threading.Tasks;
+using retrobarcelona.DialogueTree.Runtime;
 
 namespace retrobarcelona.MusicSystem
 {
@@ -30,6 +31,7 @@ namespace retrobarcelona.MusicSystem
             AudioSystem.Instance.PlayMusic(data.songName);
             foreach (NoteData note in data.notes) {
                 await SpawnNote(note.lane, note.time);
+                DialogueSystem.Instance.TypeLine(note.text);
             }
             
             await UniTask.Delay(TimeSpan.FromSeconds(time));
@@ -38,7 +40,9 @@ namespace retrobarcelona.MusicSystem
      
         private async UniTask SpawnNote(int lane, float time) {
             await UniTask.Delay(TimeSpan.FromSeconds(time));
+
             GameObject note = Instantiate(_notePrefabs[lane], _lanes[lane].position, Quaternion.identity).gameObject;
+
             note.transform.SetParent(_lanes[lane]);
             note.transform.localPosition = Vector3.zero;
         }

@@ -8,6 +8,7 @@ namespace retrobarcelona.MusicSystem {
     public class NoteData {
         public float time;
         public int lane;
+        public string text;
     }
 
     [System.Serializable]

@@ -25,9 +25,6 @@ namespace retrobarcelona.Systems.AudioSystem
 
         private Sound _previousMusic, _currentMusic;
 
-        [Header("Dialog")]
-        public bool StillSpeaking = false;
-
         public string GetPreviousMusic()
         {
             if (_previousMusic == null) return "";
