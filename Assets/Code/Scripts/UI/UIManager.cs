@@ -9,13 +9,11 @@ namespace retrobarcelona.UI
         [SerializeField] private GameObject DialogueCanvas;
         [SerializeField] private GameObject DialogueBox;
         [SerializeField] private GameObject ButtonHolder;
-        [SerializeField] private GameObject Avatar;
         [SerializeField] private GameObject _choiceButtonPrefab;
         
-        public void ActivateDialogue(string name, Sprite avatarsprite)
+        public void ActivateDialogue(string name)
         {
             SetName(name);
-            SetAvatar(avatarsprite);
             DialogueCanvas.SetActive(true);
         }
 
@@ -34,14 +32,6 @@ namespace retrobarcelona.UI
         public void SetName(string name)
         {
             DialogueBox.transform.Find("Name").GetComponent<TMPro.TextMeshProUGUI>().text = name;
-        }
-
-        private void SetAvatar(Sprite avatarsprite)
-        {
-            Avatar.SetActive(false);
-            if (avatarsprite == null) return;
-            Avatar.SetActive(true);
-            Avatar.GetComponent<UnityEngine.UI.Image>().sprite = avatarsprite;
         }
 
 

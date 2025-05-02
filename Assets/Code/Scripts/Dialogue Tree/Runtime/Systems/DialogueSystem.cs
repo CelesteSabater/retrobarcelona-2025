@@ -93,7 +93,7 @@ namespace retrobarcelona.DialogueTree.Runtime
             if (dialogueTree._blackboard._npcData != null)
                 _npcData = dialogueTree._blackboard._npcData;
 
-            UIManager.Instance.ActivateDialogue(_npcData._npcName,_npcData._npcAvatar);
+            UIManager.Instance.ActivateDialogue(_npcData._npcName);
             GameEvents.current.SetDialogue(true);
             _currentTheme = AudioSystem.Instance.GetCurrentMusic();
 
@@ -112,7 +112,7 @@ namespace retrobarcelona.DialogueTree.Runtime
             _dialogueTree = dialogueTree;
             _npcData = npcData;
 
-            UIManager.Instance.ActivateDialogue(_npcData.name,_npcData._npcAvatar);
+            UIManager.Instance.ActivateDialogue(_npcData.name);
             GameEvents.current.SetDialogue(true);
             _currentTheme = AudioSystem.Instance.GetCurrentMusic();
 
@@ -121,7 +121,7 @@ namespace retrobarcelona.DialogueTree.Runtime
 
         private void EndLines()
         {
-            SetActive(0);
+            //SetActive(0);
             AudioSystem.Instance.StillSpeaking = false;
             _currentNode.EndDialogue();
         }
