@@ -63,7 +63,7 @@ public class SistemaDePuntos : MonoBehaviour
             CalcularPuntos(NoteHit.AlmostCorrect);
             if (Input.GetKeyDown(KeyCode.E))
             CalcularPuntos(NoteHit.AlmostIncorrect);
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.R))
             CalcularPuntos(NoteHit.Incorrect);
 
         // Simulación de karma (Temporales)
@@ -118,7 +118,6 @@ public class SistemaDePuntos : MonoBehaviour
             karmaToal = 100;
         else if (karmaToal < -100)
             karmaToal = -100;
-        float valorBarra = (karmaToal + 100f) / 200f;
     }
 
     public void CalcularPuntos(NoteHit nota)
@@ -163,5 +162,7 @@ public class SistemaDePuntos : MonoBehaviour
         }
     }
     public int GetKarma() => karmaToal;
+    public int TotalPuntos => totalPuntos;
+    public int RachaPerfecta => rachaPerfecta;
     
 }
