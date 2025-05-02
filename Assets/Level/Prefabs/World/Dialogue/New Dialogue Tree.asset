@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Eres un gilipollas.
   _guid: 2f606dca3584f6e478539008871afac3
-  _position: {x: 139.19998, y: 486.39996}
+  _position: {x: -90.269516, y: 486.39993}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: 
   _guid: 706959a938c6031498bd22ee19ccfab0
-  _position: {x: 340.8, y: 679.2}
+  _position: {x: 111.330444, y: 679.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Opci\xF3n 2"
   _guid: 1aed811427c3b7445bdde00c17a2d161
-  _position: {x: 340.8, y: 318.40002}
+  _position: {x: 111.330444, y: 318.4}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "\xA1Te reto a una pelea de gallos!"
   _guid: f691f6a770b1bc1499b2d688ea590c9f
-  _position: {x: 137.60004, y: 318.39996}
+  _position: {x: -91.86961, y: 318.4}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: 
   _guid: b3592a95dc3e6d14e80a8d9e38154f84
-  _position: {x: 139.19995, y: 679.2}
+  _position: {x: -90.269516, y: 679.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: :)
   _guid: 768d706da8c21f249bbe4af4758d3472
-  _position: {x: 340.8, y: 477.59998}
+  _position: {x: 111.330444, y: 477.59998}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}

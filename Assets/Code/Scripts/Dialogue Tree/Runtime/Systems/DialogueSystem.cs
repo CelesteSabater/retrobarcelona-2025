@@ -72,6 +72,7 @@ namespace retrobarcelona.DialogueTree.Runtime
         void SongFinished()
         {
             _songFinished = true;
+            GameEvents.current.SetDialogue(true);
             NextLine();
         }
 
@@ -223,7 +224,8 @@ namespace retrobarcelona.DialogueTree.Runtime
             switch (_currentNode)
             {         
                 case Song _node:
-
+                    if (_songFinished)
+                        ChangeCurrentNode(_node._child);
                     break;       
                 case EndNode _node:
                     EndDialogue(_node);
