@@ -12,7 +12,6 @@ using UnityEditor;
 
 namespace retrobarcelona.DialogueTree.Editor
 {
-    
     public class DialogueNodeView : UnityEditor.Experimental.GraphView.Node
     {
         public Action<DialogueNodeView> OnNodeSelected;

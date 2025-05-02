@@ -30,6 +30,9 @@ namespace retrobarcelona.DialogueTree.Runtime
         [SerializeField] private float textSpeed;
         public float _interactTimeoutDelta;
         public float _moveTimeoutDelta;
+        
+        private bool _inDialogue = true;
+        private void SetInDialogue(bool value) => _inDialogue = value;
 
         private DialogueTree _dialogueTree;
         private DialogueNode _currentNode;
@@ -50,6 +53,7 @@ namespace retrobarcelona.DialogueTree.Runtime
         private void Start()
         {
             ClearUI();
+            GameEvents.current.onSetDialogue += SetInDialogue;
 
             _interactTimeoutDelta = InteractTimeout;
             _moveTimeoutDelta = MoveTimeout;
@@ -57,7 +61,7 @@ namespace retrobarcelona.DialogueTree.Runtime
 
         private void Update()
         {
-            if (GameManager.Instance.InDialogue())
+            if (_inDialogue)
             {
                 Interact();
                 Move();

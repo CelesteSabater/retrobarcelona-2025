@@ -1,13 +1,12 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using retrobarcelona.Managers;
 using retrobarcelona.Managers.ControlsManager;
 using retrobarcelona.UI;
 using retrobarcelona.Disposable;
 using retrobarcelona.Systems.AudioSystem;
-using retrobarcelona.StateMachine;
 using retrobarcelona.DialogueTree.Runtime;
+using retrobarcelona.MusicSystem;
 
 namespace retrobarcelona.Other
 {
@@ -15,7 +14,7 @@ namespace retrobarcelona.Other
     {
         [Header("Binder")]
         [SerializeField] private LoadingScreen _loadingScreen;
-        [SerializeField] private CameraController _mainCamera;
+        [SerializeField] private GameObject _mainCamera;
         [SerializeField] private EventSystem _eventSystem;
         [SerializeField] private Light _directionalLight;
 
@@ -24,9 +23,9 @@ namespace retrobarcelona.Other
         [SerializeField] private ControlsManager _controlsManager;
         [SerializeField] private UIManager _uiManager;
         [SerializeField] private DialogueSystem _dialogueSystem;
-        [SerializeField] private StateMachine.StateMachine _player;
         [SerializeField] private GameObject _enviorement;
-        [SerializeField] private GameManager _gameManager;
+        [SerializeField] private SongLoader _songLoader;
+        [SerializeField] private NoteSpawner _noteSpawner;
 
         private int _currentStep, _maxSteps;
 
@@ -68,13 +67,13 @@ namespace retrobarcelona.Other
 
         private async UniTask CreateObjects()
         {
-            _player = Instantiate(_player);
             _enviorement = Instantiate(_enviorement);
             _audioSystem = Instantiate(_audioSystem);
             _controlsManager = Instantiate(_controlsManager);
             _uiManager = Instantiate(_uiManager);
             _dialogueSystem = Instantiate(_dialogueSystem);
-            _gameManager = Instantiate(_gameManager);
+            _songLoader = Instantiate(_songLoader);
+            _noteSpawner = Instantiate(_noteSpawner);
 
             await UniTask.Yield();
         }
@@ -88,8 +87,7 @@ namespace retrobarcelona.Other
         {
             _audioSystem.StartMusic();
             _controlsManager.ActivateGameControls();
-            _mainCamera.SetFollow(_player.gameObject);
-            _gameManager.SetStateMachine(_player);
+            _songLoader.StartTest();
 
             await UniTask.Yield();
         }

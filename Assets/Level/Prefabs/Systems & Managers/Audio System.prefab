@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicVolume: 1
   _sfxVolume: 1
-  _startingMusic: Efficiency
+  _startingMusic: 
   _musicSounds:
   - _name: Efficiency
     _clip: {fileID: 8300000, guid: 1297f4a458e58af1e8841a64feb1e7e8, type: 3}

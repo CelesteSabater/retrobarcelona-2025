@@ -63,7 +63,7 @@ namespace retrobarcelona.Systems.AudioSystem
             CheckFiles();
             #endif
 
-            if (_startingMusic != null && _currentMusic == null && _musicSource != null) 
+            if (_startingMusic != null && _currentMusic == null && _musicSource != null && _startingMusic != "") 
                 PlayMusic(_startingMusic);
         }
 

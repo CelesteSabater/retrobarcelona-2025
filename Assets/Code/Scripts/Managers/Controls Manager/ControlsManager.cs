@@ -15,6 +15,10 @@ namespace retrobarcelona.Managers.ControlsManager
         private InputAction _zoom;
         private InputAction _jump;
         private InputAction _interact;
+        private InputAction _lane1;
+        private InputAction _lane2;
+        private InputAction _lane3;
+        private InputAction _lane4;
         private bool _gameControlsControlsAreActive = false;
 
         public void ActivateGameControls() => _gameControlsControlsAreActive = true;
@@ -32,11 +36,19 @@ namespace retrobarcelona.Managers.ControlsManager
             _accelerate = _playerControls.GameControls.Accelerate;
             _jump = _playerControls.GameControls.Jump;
             _interact = _playerControls.GameControls.Interact;
+            _lane1 = _playerControls.GameControls.Lane1;
+            _lane2 = _playerControls.GameControls.Lane2;
+            _lane3 = _playerControls.GameControls.Lane3;
+            _lane4 = _playerControls.GameControls.Lane4;
 
             _move.Enable();
             _accelerate.Enable();
             _jump.Enable();
             _interact.Enable();
+            _lane1.Enable();
+            _lane2.Enable();
+            _lane3.Enable();
+            _lane4.Enable();
         }
 
         private void OnDisable()
@@ -45,6 +57,10 @@ namespace retrobarcelona.Managers.ControlsManager
             _accelerate.Disable();
             _jump.Disable();
             _interact.Disable();
+            _lane1.Disable();
+            _lane2.Disable();
+            _lane3.Disable();
+            _lane4.Disable();
         }
 
         public Vector2 GetMovementDirection()
@@ -93,6 +109,38 @@ namespace retrobarcelona.Managers.ControlsManager
                 return false;
             
             return _interact.ReadValue<float>() > 0.1f ;
+        }
+
+        public bool GetIsLane1()
+        {
+            if (!_gameControlsControlsAreActive)
+                return false;
+            
+            return _lane1.ReadValue<float>() > 0.1f ;
+        }
+
+        public bool GetIsLane2()
+        {
+            if (!_gameControlsControlsAreActive)
+                return false;
+            
+            return _lane2.ReadValue<float>() > 0.1f ;
+        }
+
+        public bool GetIsLane3()
+        {
+            if (!_gameControlsControlsAreActive)
+                return false;
+            
+            return _lane3.ReadValue<float>() > 0.1f ;
+        }
+
+        public bool GetIsLane4()
+        {
+            if (!_gameControlsControlsAreActive)
+                return false;
+            
+            return _lane4.ReadValue<float>() > 0.1f ;
         }
     }
 }

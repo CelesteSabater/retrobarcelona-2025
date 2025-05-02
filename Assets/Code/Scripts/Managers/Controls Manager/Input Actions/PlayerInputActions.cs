@@ -126,6 +126,42 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Lane1"",
+                    ""type"": ""Button"",
+                    ""id"": ""e4556adf-7c4e-40cb-925e-d803e0cdb652"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Lane2"",
+                    ""type"": ""Button"",
+                    ""id"": ""9ca91865-de0d-42fe-b7cb-06f6f5b4b021"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Lane3"",
+                    ""type"": ""Button"",
+                    ""id"": ""614beb45-c540-426e-921f-9a276180f13c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Lane4"",
+                    ""type"": ""Button"",
+                    ""id"": ""85869179-d828-4698-ad34-51dfe14d7f23"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -414,6 +450,138 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""196d69e4-2807-45d0-973a-fe2ef6509008"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Controller"",
+                    ""action"": ""Lane1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c4f9129a-90bb-46ad-891b-c53c624f52ec"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Lane1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""23175e45-4850-4365-a276-7a6471929418"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Lane1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3bc0476e-0552-46cc-b6fb-16e1e629d452"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Controller"",
+                    ""action"": ""Lane2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5505d325-260e-4d67-9021-fefe8f97ec79"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Lane2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f1d282c7-3e77-49d7-ad90-7cd5c503a7aa"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Lane2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24d67e02-6602-4c85-aa67-4deab13d5a2a"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Controller"",
+                    ""action"": ""Lane3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a380cc29-4411-4b25-8979-782f5c9fc66d"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Lane3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2cddaad0-57f9-4239-9297-c8222b1b40ba"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Lane3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7dae6d76-1d45-4bf8-b67b-1f7f241f147c"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Controller"",
+                    ""action"": ""Lane4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5a8f12fb-b82d-4eb5-b888-8006daa3016c"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Lane4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6a4d19fd-eaf8-4f38-a063-9daf059c361b"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard"",
+                    ""action"": ""Lane4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -449,6 +617,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_GameControls_Accelerate = m_GameControls.FindAction("Accelerate", throwIfNotFound: true);
         m_GameControls_Jump = m_GameControls.FindAction("Jump", throwIfNotFound: true);
         m_GameControls_Interact = m_GameControls.FindAction("Interact", throwIfNotFound: true);
+        m_GameControls_Lane1 = m_GameControls.FindAction("Lane1", throwIfNotFound: true);
+        m_GameControls_Lane2 = m_GameControls.FindAction("Lane2", throwIfNotFound: true);
+        m_GameControls_Lane3 = m_GameControls.FindAction("Lane3", throwIfNotFound: true);
+        m_GameControls_Lane4 = m_GameControls.FindAction("Lane4", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -533,6 +705,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_GameControls_Accelerate;
     private readonly InputAction m_GameControls_Jump;
     private readonly InputAction m_GameControls_Interact;
+    private readonly InputAction m_GameControls_Lane1;
+    private readonly InputAction m_GameControls_Lane2;
+    private readonly InputAction m_GameControls_Lane3;
+    private readonly InputAction m_GameControls_Lane4;
     /// <summary>
     /// Provides access to input actions defined in input action map "GameControls".
     /// </summary>
@@ -560,6 +736,22 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "GameControls/Interact".
         /// </summary>
         public InputAction @Interact => m_Wrapper.m_GameControls_Interact;
+        /// <summary>
+        /// Provides access to the underlying input action "GameControls/Lane1".
+        /// </summary>
+        public InputAction @Lane1 => m_Wrapper.m_GameControls_Lane1;
+        /// <summary>
+        /// Provides access to the underlying input action "GameControls/Lane2".
+        /// </summary>
+        public InputAction @Lane2 => m_Wrapper.m_GameControls_Lane2;
+        /// <summary>
+        /// Provides access to the underlying input action "GameControls/Lane3".
+        /// </summary>
+        public InputAction @Lane3 => m_Wrapper.m_GameControls_Lane3;
+        /// <summary>
+        /// Provides access to the underlying input action "GameControls/Lane4".
+        /// </summary>
+        public InputAction @Lane4 => m_Wrapper.m_GameControls_Lane4;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -598,6 +790,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @Lane1.started += instance.OnLane1;
+            @Lane1.performed += instance.OnLane1;
+            @Lane1.canceled += instance.OnLane1;
+            @Lane2.started += instance.OnLane2;
+            @Lane2.performed += instance.OnLane2;
+            @Lane2.canceled += instance.OnLane2;
+            @Lane3.started += instance.OnLane3;
+            @Lane3.performed += instance.OnLane3;
+            @Lane3.canceled += instance.OnLane3;
+            @Lane4.started += instance.OnLane4;
+            @Lane4.performed += instance.OnLane4;
+            @Lane4.canceled += instance.OnLane4;
         }
 
         /// <summary>
@@ -621,6 +825,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @Lane1.started -= instance.OnLane1;
+            @Lane1.performed -= instance.OnLane1;
+            @Lane1.canceled -= instance.OnLane1;
+            @Lane2.started -= instance.OnLane2;
+            @Lane2.performed -= instance.OnLane2;
+            @Lane2.canceled -= instance.OnLane2;
+            @Lane3.started -= instance.OnLane3;
+            @Lane3.performed -= instance.OnLane3;
+            @Lane3.canceled -= instance.OnLane3;
+            @Lane4.started -= instance.OnLane4;
+            @Lane4.performed -= instance.OnLane4;
+            @Lane4.canceled -= instance.OnLane4;
         }
 
         /// <summary>
@@ -715,5 +931,33 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInteract(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Lane1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnLane1(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Lane2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnLane2(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Lane3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnLane3(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Lane4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnLane4(InputAction.CallbackContext context);
     }
 }
