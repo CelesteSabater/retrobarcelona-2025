@@ -73,6 +73,7 @@ namespace retrobarcelona.DialogueTree.Runtime
         {
             _songFinished = true;
             GameEvents.current.SetDialogue(true);
+            UIManager.Instance.SetName(_npcData._npcName); 
             NextLine();
         }
 
@@ -81,7 +82,7 @@ namespace retrobarcelona.DialogueTree.Runtime
             if (_inDialogue)
             {
                 Interact();
-                Move();
+                //Move();
             }
         }
 
@@ -164,8 +165,42 @@ namespace retrobarcelona.DialogueTree.Runtime
 
         private void Interact()
         {
-            if (ControlsManager.Instance.GetIsInteracting() && _interactTimeoutDelta <= 0)
+            StartBranch node = _currentNode as StartBranch;
+
+            if (ControlsManager.Instance.GetIsLane4() && _interactTimeoutDelta <= 0)
             {
+                if (node != null) 
+                    if (node._choices.Count < 1)
+                        return;
+
+                _currentAnswer = 0;
+                _interactTimeoutDelta = InteractTimeout;
+                InteractKey();
+            } else if (ControlsManager.Instance.GetIsLane3() && _interactTimeoutDelta <= 0)
+            {
+                if (node != null) 
+                    if (node._choices.Count < 2)
+                        return;
+
+                _currentAnswer = 1;
+                _interactTimeoutDelta = InteractTimeout;
+                InteractKey();
+            } else if (ControlsManager.Instance.GetIsLane2() && _interactTimeoutDelta <= 0)
+            {
+                if (node != null) 
+                    if (node._choices.Count < 3)
+                        return;
+
+                _currentAnswer = 2;
+                _interactTimeoutDelta = InteractTimeout;
+                InteractKey();
+            } else if (ControlsManager.Instance.GetIsLane1() && _interactTimeoutDelta <= 0)
+            {
+                if (node != null) 
+                    if (node._choices.Count < 4)
+                        return;
+
+                _currentAnswer = 3;
                 _interactTimeoutDelta = InteractTimeout;
                 InteractKey();
             }
@@ -369,7 +404,8 @@ namespace retrobarcelona.DialogueTree.Runtime
             
             if (text == "")
                 return;
-                
+
+            UIManager.Instance.SetName("Guillem de Berguedà");
             StartCoroutine(TypeLine2(text));
         }
 

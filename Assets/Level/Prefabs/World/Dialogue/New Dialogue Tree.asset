@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Ay, pues me cago en tu vida.
   _guid: 672704af26f6735f5bb75d3ceded7b76
-  _position: {x: -180.40405, y: 441.08105}
+  _position: {x: 26.66663, y: 941.0397}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -25,7 +25,113 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _npcTheme: 
-  _child: {fileID: 0}
+  _child: {fileID: -3540472818767252947}
+--- !u!114 &-7078273086146372433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae897595d6827d4e938ca01d28c0e13, type: 3}
+  m_Name: PlayerText
+  m_EditorClassIdentifier: 
+  _text: "Opci\xF3n 3"
+  _guid: 199ed67c34d2c739f8d546aa7162b4a1
+  _position: {x: 195.29688, y: 291.92172}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -2785177436946599890}
+--- !u!114 &-6678327433595642639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: a
+  _guid: deba6dcbcd68a8bdb84b44d207819b5c
+  _position: {x: -173.5256, y: 427.28116}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3588704057837961881}
+--- !u!114 &-5215002579038293946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: b
+  _guid: 184378a4ded98fc87b0cd1ef75dfae68
+  _position: {x: 17.555292, y: 438.84842}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3588704057837961881}
+--- !u!114 &-3588704057837961881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6274fad47bb06a4baea6cdbf2a15f42, type: 3}
+  m_Name: StartBranch
+  m_EditorClassIdentifier: 
+  _text: it is what it is
+  _guid: e9f6296cd5d22dc2989726ee9c6405da
+  _position: {x: 0.595459, y: 621.9914}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _choices:
+  - {fileID: 816700830973661975}
+  _returnOnEndBranch: 0
 --- !u!114 &-3540472818767252947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,9 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 137eb93b7fa231b4dba92d853c261399, type: 3}
   m_Name: EndDialogue
   m_EditorClassIdentifier: 
-  _text: 
+  _text: :)
   _guid: 706959a938c6031498bd22ee19ccfab0
-  _position: {x: 12.16748, y: 1165.4397}
+  _position: {x: 30.666634, y: 1119.0397}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -51,7 +157,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _npcTheme: 
---- !u!114 &-1551437074879687225
+--- !u!114 &-2785177436946599890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,12 +166,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
-  m_Name: Song
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
   m_EditorClassIdentifier: 
-  _text: "Opci\xF3n 2"
-  _guid: 1aed811427c3b7445bdde00c17a2d161
-  _position: {x: 6.7766595, y: 378.23904}
+  _text: c
+  _guid: 21b9db8bcde9f9f959d22283aa7754b4
+  _position: {x: 218.96399, y: 437.83295}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -76,10 +182,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _npcTheme: 
-  _child: {fileID: 0}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
-  _maxScore: 800
-  _karma: 10
+  _child: {fileID: -3588704057837961881}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,10 +200,15 @@ MonoBehaviour:
   - {fileID: 904456460139664722}
   - {fileID: 8837428416895282786}
   - {fileID: 816700830973661975}
-  - {fileID: -1551437074879687225}
   - {fileID: -3540472818767252947}
-  - {fileID: 7637030604392250941}
   - {fileID: -7550669171203605077}
+  - {fileID: 1764376009215536227}
+  - {fileID: 985535188939992820}
+  - {fileID: -7078273086146372433}
+  - {fileID: -6678327433595642639}
+  - {fileID: -5215002579038293946}
+  - {fileID: -2785177436946599890}
+  - {fileID: -3588704057837961881}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -119,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "\xA1Te reto a una pelea de gallos!"
   _guid: f691f6a770b1bc1499b2d688ea590c9f
-  _position: {x: -180.10999, y: 307.66983}
+  _position: {x: 17.666594, y: 773.0397}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -160,7 +268,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8837428416895282786}
---- !u!114 &7637030604392250941
+--- !u!114 &985535188939992820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,12 +277,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
-  m_Name: Song
+  m_Script: {fileID: 11500000, guid: fae897595d6827d4e938ca01d28c0e13, type: 3}
+  m_Name: PlayerText
   m_EditorClassIdentifier: 
-  _text: "Opcji\xF3n 3"
-  _guid: 01580d71bab1fd6dc8ba03d8b2c2ee5e
-  _position: {x: 199.5581, y: 388.98602}
+  _text: "Opci\xF3n 2"
+  _guid: ac7d5d916145f11a1b71425ba4ed30b7
+  _position: {x: 1.707057, y: 297.20694}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -185,10 +293,33 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _npcTheme: 
-  _child: {fileID: 0}
-  _jsonFile: {fileID: 0}
-  _maxScore: 0
-  _karma: 0
+  _child: {fileID: -5215002579038293946}
+--- !u!114 &1764376009215536227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae897595d6827d4e938ca01d28c0e13, type: 3}
+  m_Name: PlayerText
+  m_EditorClassIdentifier: 
+  _text: "Opci\xF3n 1"
+  _guid: 2e5fb898e7065269d94a8a1265fa0d07
+  _position: {x: -182.3764, y: 295.479}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -6678327433595642639}
 --- !u!114 &8837428416895282786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +346,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _choices:
-  - {fileID: 816700830973661975}
-  - {fileID: -1551437074879687225}
-  - {fileID: 7637030604392250941}
+  - {fileID: 1764376009215536227}
+  - {fileID: 985535188939992820}
+  - {fileID: -7078273086146372433}
   _returnOnEndBranch: 1
