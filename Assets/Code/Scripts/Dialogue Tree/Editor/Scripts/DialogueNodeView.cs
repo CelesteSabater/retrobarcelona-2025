@@ -69,7 +69,7 @@ namespace retrobarcelona.DialogueTree.Editor
                 case StartNode:
                 case TextNode:
                 case ActionNode:
-                    _input = InstantiatePort(Orientation.Vertical, Direction.Input, Port.Capacity.Single, typeof(bool));
+                    _input = InstantiatePort(Orientation.Vertical, Direction.Input, Port.Capacity.Multi, typeof(bool));
                     break;
             }
 
