@@ -84,6 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2070267414758980999}
+  - component: {fileID: 2695876393518615314}
   m_Layer: 0
   m_Name: Cortina1
   m_TagString: Untagged
@@ -113,6 +114,27 @@ Transform:
   - {fileID: 5490130430304354096}
   m_Father: {fileID: 8268201545692648518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2695876393518615314
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602279289493999450}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 87947f4c901692b40a05ee2f58c37095, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &650227493569795444
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5225334361413215431}
   m_Layer: 0
-  m_Name: Escenario
+  m_Name: EscenarioMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -998,6 +1020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 793871527837669882}
+  - component: {fileID: 566625951551935958}
   m_Layer: 0
   m_Name: Cortina2
   m_TagString: Untagged
@@ -1027,6 +1050,27 @@ Transform:
   - {fileID: 1025686402938810296}
   m_Father: {fileID: 8268201545692648518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &566625951551935958
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266979096832765673}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75b0024e7bd4ba54fbf54096e4cd809d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2271782466267614503
 GameObject:
   m_ObjectHideFlags: 0

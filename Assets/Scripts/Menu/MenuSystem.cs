@@ -38,6 +38,13 @@ public class MenuSystem : MonoBehaviour
     {
         animator1.SetBool("Abrir", true);
         animator2.SetBool("Abrir", true);
+
+        StartCoroutine(ActivatePanelAfterDelay(panel, 1f));
+    }
+
+    private IEnumerator ActivatePanelAfterDelay(GameObject panel, float delay)
+    {
+        yield return new WaitForSeconds(delay);
         panel.SetActive(false);
         nivelesPanel.SetActive(!nivelesPanel.activeSelf);
     }
