@@ -1,0 +1,1386 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9132983810303896621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: Que parlin si se atreveixen.
+  _guid: 220c778e686690141a8da46a22f40204
+  _position: {x: 235.2001, y: 408.79996}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 1770351291774458709}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: -10
+--- !u!114 &-9069286465550860195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6274fad47bb06a4baea6cdbf2a15f42, type: 3}
+  m_Name: StartBranch
+  m_EditorClassIdentifier: 
+  _text: "He vist la gent, amb por als ulls i veu menuda,\r\nxiuxiuejar ton nom com
+    mal auguri enc\xE8s:\r\n\u2018Guillem, no continues, que et perdr\xE0s en la
+    caiguda\u2019,\r\ncom si el teu pas fos vent que mai no t\xE9 rep\xE8s.\r"
+  _guid: d07948329bb44df45a988ad8de0746e8
+  _position: {x: 0.0000076293945, y: 157.18335}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _choices:
+  - {fileID: 148132371224970944}
+  - {fileID: -8528221059116673710}
+  - {fileID: -5440302280893523235}
+  - {fileID: -9132983810303896621}
+  _returnOnEndBranch: 0
+--- !u!114 &-8937027040721846999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Tu encara no has trobat la clau de la teva pr\xF2pia mis\xE8ria."
+  _guid: 3b60507633486754ebcf93e2597afc3e
+  _position: {x: 78.400024, y: 1164}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 8788262966368050282}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: -20
+--- !u!114 &-8528221059116673710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: ' Que xiuxiuegin tot el que vulguin.'
+  _guid: ce6702bd966197d4ab888dd131084e40
+  _position: {x: -78.4, y: 408.80002}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -1203318875285871682}
+  _jsonFile: {fileID: 0}
+  _maxScore: 400
+  _karma: 10
+--- !u!114 &-8289085507813350125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Tampoc fa falta dir aquestes coses.
+  _guid: 27b1cc7b9fadf1c4591f96fa7f57176a
+  _position: {x: 92.80005, y: 2824.0005}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 4295172605215369085}
+--- !u!114 &-7143930845504168364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Molt bona.
+  _guid: cfdf8054cad2b254cbb5e8c624325fa0
+  _position: {x: -64, y: 2207.2}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3264340625960488191}
+--- !u!114 &-6595828986903649424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: "Meravellosa contestaci\xF3."
+  _guid: f06d502977512f54db4d3801fdb3038b
+  _position: {x: -221.59998, y: 1456}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 2942919797212981986}
+--- !u!114 &-6568544080252434822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: "Meravellosa contestaci\xF3."
+  _guid: a0daa5001d944b44fa34503bc775edff
+  _position: {x: -207.2, y: 2824}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 4295172605215369085}
+--- !u!114 &-6294289574857562860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Encara t\u2019hi quedes, vigilant parets buides."
+  _guid: 925d0f1658f2c9340aeadcdabcc61c79
+  _position: {x: -78.400024, y: 1164}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -948394987918461816}
+  _jsonFile: {fileID: 0}
+  _maxScore: 400
+  _karma: 10
+--- !u!114 &-6157436379182274628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "He canviat, s\xED. Ara les meves paraules tallen m\xE9s que les espases."
+  _guid: 71009d6b4114e5247a50a0893e399457
+  _position: {x: -220.79996, y: 3286.4004}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -1690107172275493885}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: 20
+--- !u!114 &-5440302280893523235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "De m\xED no xiuxiuejen, nom\xE9s parlen de la teva derrota."
+  _guid: 99529593939cf6e4abccc479e1be860c
+  _position: {x: 78.40003, y: 408.8}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3832302478614523190}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: -20
+--- !u!114 &-4933341701247973827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Si hagu\xE9s estat un duel, m'hauria mort."
+  _guid: 8f9fe6397869a8c4cbcc3f9ba5172626
+  _position: {x: 240.80002, y: 1952.0005}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 7437767931670435583}
+  _jsonFile: {fileID: 0}
+  _maxScore: 0
+  _karma: 0
+--- !u!114 &-4451948124690484161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Amb el temps ho conseguiras.
+  _guid: f7460639b71251a4a8787e2969c7dd8e
+  _position: {x: -64, y: 3465.6}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -1370753835295746325}
+--- !u!114 &-3832302478614523190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Poca-solta.
+  _guid: f1906bcde7973f148a7ea8d642fc3c55
+  _position: {x: 78.39996, y: 692.8}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 6698434180468742843}
+--- !u!114 &-3264340625960488191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6274fad47bb06a4baea6cdbf2a15f42, type: 3}
+  m_Name: StartBranch
+  m_EditorClassIdentifier: 
+  _text: "Sense terres ni llar, a l\u2019exili t\u2019has perdut,\r\ncom t\u2019atreveixes
+    a tornar, com si tot fos un atribut?\r\nLa teva abs\xE8ncia ha estat llarga,
+    i el teu retorn, ple de dubte,\r\nper\xF2 el teu cam\xED trencat no troba la
+    llum que et porti a la veritat.\r"
+  _guid: 9502dbeddb0218e4484be78ae00a416a
+  _position: {x: 10.800016, y: 2373.28}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _choices:
+  - {fileID: 2389359702804491588}
+  - {fileID: 6404136347499949871}
+  - {fileID: 3040609804779582039}
+  - {fileID: 6907803922758424491}
+  _returnOnEndBranch: 0
+--- !u!114 &-3234050993659528331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Bona.
+  _guid: 7bd02882bad67c74399da167e65b9193
+  _position: {x: -56.80007, y: 2824}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 4295172605215369085}
+--- !u!114 &-1794490950315143364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2d7fcff5f9de34ca86517b1ac30fdf, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _text: 
+  _guid: d19923e96e8416f4286370fddbaa229c
+  _position: {x: 0, y: 0}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -9069286465550860195}
+--- !u!114 &-1690107172275493885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Sabia que podies ser millor.
+  _guid: a5a7093ff374d284d9c0519d468354f8
+  _position: {x: -213.59998, y: 3465.6}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -1370753835295746325}
+--- !u!114 &-1622197787080944450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Que inapropiat!
+  _guid: d30e6b43948dbb64da0ff1ad4a7d8bf6
+  _position: {x: 248.79999, y: 2824}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 4295172605215369085}
+--- !u!114 &-1370753835295746325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137eb93b7fa231b4dba92d853c261399, type: 3}
+  m_Name: EndDialogue
+  m_EditorClassIdentifier: 
+  _text: 
+  _guid: 83302c6c93783374faa999e34f5d6a1e
+  _position: {x: 15.200012, y: 3644.144}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+--- !u!114 &-1203318875285871682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Millorable.
+  _guid: 2ca98342bd0b6fa40ba581775fd73365
+  _position: {x: -71.999954, y: 692.8}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 6698434180468742843}
+--- !u!114 &-948394987918461816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Bona.
+  _guid: 3196f3c7e1d7eb64895da0d05e088f24
+  _position: {x: -71.19995, y: 1456}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 2942919797212981986}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609f70c3b537f684f95f7a3624654c67, type: 3}
+  m_Name: Enemy2
+  m_EditorClassIdentifier: 
+  _rootNode: {fileID: -1794490950315143364}
+  _nodes:
+  - {fileID: -1794490950315143364}
+  - {fileID: -9069286465550860195}
+  - {fileID: -8528221059116673710}
+  - {fileID: -5440302280893523235}
+  - {fileID: 148132371224970944}
+  - {fileID: -9132983810303896621}
+  - {fileID: 8730743003867513860}
+  - {fileID: -1203318875285871682}
+  - {fileID: -3832302478614523190}
+  - {fileID: 1770351291774458709}
+  - {fileID: 2880597849024727548}
+  - {fileID: -6294289574857562860}
+  - {fileID: 931162987619867843}
+  - {fileID: -8937027040721846999}
+  - {fileID: 6698434180468742843}
+  - {fileID: -6595828986903649424}
+  - {fileID: -948394987918461816}
+  - {fileID: 6864325460505366228}
+  - {fileID: 8788262966368050282}
+  - {fileID: 2942919797212981986}
+  - {fileID: 7198198589187679284}
+  - {fileID: 8507985575888423790}
+  - {fileID: 5702842646337440243}
+  - {fileID: -4933341701247973827}
+  - {fileID: 5727506728379128300}
+  - {fileID: 8293966448948061129}
+  - {fileID: -7143930845504168364}
+  - {fileID: 7437767931670435583}
+  - {fileID: -3264340625960488191}
+  - {fileID: 2389359702804491588}
+  - {fileID: 6404136347499949871}
+  - {fileID: 3040609804779582039}
+  - {fileID: 6907803922758424491}
+  - {fileID: -6568544080252434822}
+  - {fileID: -3234050993659528331}
+  - {fileID: -8289085507813350125}
+  - {fileID: -1622197787080944450}
+  - {fileID: 4295172605215369085}
+  - {fileID: 1903312532752414594}
+  - {fileID: 7752690514404002675}
+  - {fileID: 2507130676728643214}
+  - {fileID: -6157436379182274628}
+  - {fileID: -1690107172275493885}
+  - {fileID: -4451948124690484161}
+  - {fileID: 128630830212395617}
+  - {fileID: 742101963094476402}
+  - {fileID: -1370753835295746325}
+  _blackboard:
+    _npcData: {fileID: 11400000, guid: 788a6fd16d3da494f9a8a18180ff9d57, type: 2}
+    _animator: {fileID: 0}
+  _nextDialogueTree: {fileID: 0}
+--- !u!114 &128630830212395617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Ets el pitjor.
+  _guid: 26e2157e4ed74dc40a3bac325415d25d
+  _position: {x: 86.400024, y: 3465.6}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -1370753835295746325}
+--- !u!114 &148132371224970944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "De m\xED no xiuxiuejen ni parlen, de mi canten altres trobadors."
+  _guid: 91d2525314b755a4e847d43407bc431d
+  _position: {x: -235.19995, y: 408.79996}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 8730743003867513860}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: 20
+--- !u!114 &742101963094476402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: La gent com tu no canvia.
+  _guid: cd2eb8bb666002d4a87fea6d683ab2e3
+  _position: {x: 236.80005, y: 3465.6}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -1370753835295746325}
+--- !u!114 &931162987619867843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Encara t\u2019hi quedes, mirant amb por."
+  _guid: 1625c382ccf80b44491c0194bbf2c546
+  _position: {x: 235.20001, y: 1164}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 6864325460505366228}
+  _jsonFile: {fileID: 0}
+  _maxScore: 400
+  _karma: -10
+--- !u!114 &1770351291774458709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Mediocre.
+  _guid: c0873f4d375d16e45a74f39bcb0c890e
+  _position: {x: 235.19998, y: 692.8}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 6698434180468742843}
+--- !u!114 &1903312532752414594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Amb el temps, he apr\xE8s que puc ser millor."
+  _guid: 6de9b740c1eda94459a3b6b051f4f3a4
+  _position: {x: -63.20003, y: 3286.4004}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -4451948124690484161}
+  _jsonFile: {fileID: 0}
+  _maxScore: 400
+  _karma: 10
+--- !u!114 &2389359702804491588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Tinc terres i t\xEDtols que em van ser arrabassats."
+  _guid: 0dd537d1cd994814b8d45786f7b5a109
+  _position: {x: -220.80002, y: 2680}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -6568544080252434822}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: 20
+--- !u!114 &2507130676728643214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "No he canviat perqu\xE8 mai he necessitat disfressar-me."
+  _guid: 349693fdf459c4b4b9976f290dc68d74
+  _position: {x: 244, y: 3286.4004}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 742101963094476402}
+  _jsonFile: {fileID: 0}
+  _maxScore: 400
+  _karma: -10
+--- !u!114 &2880597849024727548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: Tu encara no has trobat la clau per sortir.
+  _guid: 8ee03ee58d9647b47b7b10854860c38f
+  _position: {x: -235.19995, y: 1164}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -6595828986903649424}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: 20
+--- !u!114 &2942919797212981986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6274fad47bb06a4baea6cdbf2a15f42, type: 3}
+  m_Name: StartBranch
+  m_EditorClassIdentifier: 
+  _text: "Parlant d\u2019un altre tema, et pregunto en secret,\r\n\xE9s cert que
+    vas matar a tra\xEFci\xF3, com diu el gent o el dret?\r\nEl teu honor es trenca
+    com un vaixell sense vela,\r\nsi els crits del poble et posen en dubte, sota
+    la mateixa estrella.\r"
+  _guid: 727f20e812932104d952888b4277c2d5
+  _position: {x: 4, y: 1673.6001}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _choices:
+  - {fileID: 7198198589187679284}
+  - {fileID: 8507985575888423790}
+  - {fileID: 5702842646337440243}
+  - {fileID: -4933341701247973827}
+  _returnOnEndBranch: 0
+--- !u!114 &3040609804779582039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: Les terres tornaran a ser meves, costi el que costi.
+  _guid: 74d734d20e32fe14f8b759c4e40bc2fc
+  _position: {x: 92.000046, y: 2680}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -8289085507813350125}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: -20
+--- !u!114 &4295172605215369085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6274fad47bb06a4baea6cdbf2a15f42, type: 3}
+  m_Name: StartBranch
+  m_EditorClassIdentifier: 
+  _text: "Sembla que amb el temps no has canviat,\r\nper\xF2 no s\xE9 si aix\xF2
+    \xE9s bo o un mal resultat.\r\nEl temps t'ha modelat sense treva ni pietat,\r\ni
+    el teu esperit segueix igual, sense voluntat.\r"
+  _guid: 3725f061fa4c3a84a89eecbc8c70a40f
+  _position: {x: 15.199951, y: 3028.8}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _choices:
+  - {fileID: -6157436379182274628}
+  - {fileID: 1903312532752414594}
+  - {fileID: 7752690514404002675}
+  - {fileID: 2507130676728643214}
+  _returnOnEndBranch: 0
+--- !u!114 &5702842646337440243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: Vaig fer-ho i no em penedeixo.
+  _guid: e4db7c22b8e8c0449a16647e0f46fa1d
+  _position: {x: 85.599976, y: 1952}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 8293966448948061129}
+  _jsonFile: {fileID: 0}
+  _maxScore: 0
+  _karma: 0
+--- !u!114 &5727506728379128300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Oh!
+  _guid: 4beb57ff4759ac14ca1506c184d43107
+  _position: {x: -214.40002, y: 2207.2}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3264340625960488191}
+--- !u!114 &6404136347499949871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Potser he perdut terres, per\xF2 no la dignitat."
+  _guid: aae79e1389bc42249a0557801c6ab9c6
+  _position: {x: -63.20013, y: 2680}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3234050993659528331}
+  _jsonFile: {fileID: 0}
+  _maxScore: 400
+  _karma: 10
+--- !u!114 &6698434180468742843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6274fad47bb06a4baea6cdbf2a15f42, type: 3}
+  m_Name: StartBranch
+  m_EditorClassIdentifier: 
+  _text: "Et va millor des que sortires de la pres\xF3 g\xE8lida,\r\non et vaig tancar,
+    fent-te sentir com l\u2019ombra ofegada.\r\nPer\xF2 jo en tinc la clau, el poder
+    del dest\xED,\r\nmentre tu cerques la llum d\u2019un cam\xED que no has descobert
+    mai.\r"
+  _guid: f61c24ede6473914295475ba33da41f7
+  _position: {x: 3.2000427, y: 864.37}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _choices:
+  - {fileID: 2880597849024727548}
+  - {fileID: -6294289574857562860}
+  - {fileID: -8937027040721846999}
+  - {fileID: 931162987619867843}
+  _returnOnEndBranch: 0
+--- !u!114 &6864325460505366228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Que inapropiat!
+  _guid: f319334ae02c3714a9982766ec132746
+  _position: {x: 228.80005, y: 1456}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 2942919797212981986}
+--- !u!114 &6907803922758424491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Potser he perdut terres, per\xF2 no perdre tant com tu."
+  _guid: d3308fd51fdcf584d9ff0a9e59644c31
+  _position: {x: 248.79999, y: 2648.2441}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -1622197787080944450}
+  _jsonFile: {fileID: 0}
+  _maxScore: 400
+  _karma: -10
+--- !u!114 &7198198589187679284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: Vaig actuar com vaig creure que calia en aquell moment.
+  _guid: 225b77cde3f3c6b46baaf2288a8e4c8a
+  _position: {x: -227.19995, y: 1952}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 5727506728379128300}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: 20
+--- !u!114 &7437767931670435583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Cap de carbassa.
+  _guid: 34751e05ec4626c438870a9ef67c312b
+  _position: {x: 236.80005, y: 2207.2}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3264340625960488191}
+--- !u!114 &7752690514404002675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "No he canviat, i qu\xE8 importa?"
+  _guid: a9069ca2866a76746bf198cc0d3f444c
+  _position: {x: 93.600006, y: 3286.4004}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 128630830212395617}
+  _jsonFile: {fileID: 0}
+  _maxScore: 800
+  _karma: -20
+--- !u!114 &8293966448948061129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Poca-solta.
+  _guid: 3a915331a9d84b84aa3ec015a92cf296
+  _position: {x: 86.400024, y: 2207.2}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3264340625960488191}
+--- !u!114 &8507985575888423790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
+  m_Name: Song
+  m_EditorClassIdentifier: 
+  _text: "Si hagu\xE9s estat un duel, no se que hauria passat."
+  _guid: bcd6abc98f58c50478b6a9b66bb37f08
+  _position: {x: -71.19995, y: 1952}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -7143930845504168364}
+  _jsonFile: {fileID: 0}
+  _maxScore: 400
+  _karma: 10
+--- !u!114 &8730743003867513860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Oh!
+  _guid: 60a9803160e1ec04d80023d2a8418dc6
+  _position: {x: -222.39995, y: 692.8}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 6698434180468742843}
+--- !u!114 &8788262966368050282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: Tampoc fa falta dir aquestes coses.
+  _guid: 67bb3a25c57d2754abda8d22dd3e57f5
+  _position: {x: 78.400024, y: 1456}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: 2942919797212981986}
