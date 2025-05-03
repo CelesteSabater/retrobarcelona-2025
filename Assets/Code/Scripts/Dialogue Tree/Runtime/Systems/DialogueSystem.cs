@@ -172,6 +172,9 @@ namespace retrobarcelona.DialogueTree.Runtime
                     if (node._choices.Count < 1)
                         return;
 
+                if (!ControlsManager.Instance.GetIsAcorde())
+                    return;
+
                 _currentAnswer = 0;
                 _interactTimeoutDelta = InteractTimeout;
                 InteractKey();
@@ -180,6 +183,9 @@ namespace retrobarcelona.DialogueTree.Runtime
                 if (node != null) 
                     if (node._choices.Count < 2)
                         return;
+
+                if (!ControlsManager.Instance.GetIsAcorde())
+                    return;
 
                 _currentAnswer = 1;
                 _interactTimeoutDelta = InteractTimeout;
@@ -190,6 +196,9 @@ namespace retrobarcelona.DialogueTree.Runtime
                     if (node._choices.Count < 3)
                         return;
 
+                if (!ControlsManager.Instance.GetIsAcorde())
+                    return;
+
                 _currentAnswer = 2;
                 _interactTimeoutDelta = InteractTimeout;
                 InteractKey();
@@ -198,6 +207,9 @@ namespace retrobarcelona.DialogueTree.Runtime
                 if (node != null) 
                     if (node._choices.Count < 4)
                         return;
+
+                if (!ControlsManager.Instance.GetIsAcorde())
+                    return;
 
                 _currentAnswer = 3;
                 _interactTimeoutDelta = InteractTimeout;
