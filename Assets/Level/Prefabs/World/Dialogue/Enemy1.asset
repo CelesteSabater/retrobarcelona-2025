@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Per sort per mi, tu no ets res.
   _guid: 220c778e686690141a8da46a22f40204
-  _position: {x: 228.79999, y: 408.80002}
+  _position: {x: 228.79999, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -27,7 +27,7 @@ MonoBehaviour:
   _npcTheme: 
   _child: {fileID: 1770351291774458709}
   _jsonFile: {fileID: 4900000, guid: 9c1bf63582b88c740ae26d6e5e3e312a, type: 3}
-  _maxScore: 800
+  _maxScore: 400
   _karma: -10
 --- !u!114 &-9069286465550860195
 MonoBehaviour:
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: 'Les teves terres? No tens ni per una casa de gos. '
   _guid: 3b60507633486754ebcf93e2597afc3e
-  _position: {x: 75.19995, y: 1357.344}
+  _position: {x: 76.00004, y: 1357.6002}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Tens sort que no ets l\u2019oponent principal d\u2019aquesta nit de duels."
   _guid: 925d0f1658f2c9340aeadcdabcc61c79
-  _position: {x: -81.59985, y: 1357.344}
+  _position: {x: -81.600044, y: 1357.6001}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -283,8 +283,8 @@ MonoBehaviour:
   _npcTheme: 
   _child: {fileID: 7437767931670435583}
   _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
-  _maxScore: 0
-  _karma: 0
+  _maxScore: 400
+  _karma: -10
 --- !u!114 &-3832302478614523190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Saps qui s\xED que vol saber de mi?"
   _guid: e4db7c22b8e8c0449a16647e0f46fa1d
-  _position: {x: 81.59985, y: 2427.2002}
+  _position: {x: 78.40001, y: 2427.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -662,8 +662,8 @@ MonoBehaviour:
   _npcTheme: 
   _child: {fileID: 8293966448948061129}
   _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
-  _maxScore: 0
-  _karma: 0
+  _maxScore: 800
+  _karma: -20
 --- !u!114 &5727506728379128300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Retirarte es la millor opci\xF3."
   _guid: bcd6abc98f58c50478b6a9b66bb37f08
-  _position: {x: -75.19995, y: 2427.2002}
+  _position: {x: -75.199974, y: 2427.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
