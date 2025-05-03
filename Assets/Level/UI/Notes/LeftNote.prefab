@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1304777963789546330}
   - component: {fileID: 8893933205143034246}
-  - component: {fileID: 2375781071858404956}
-  - component: {fileID: 876481105140832427}
+  - component: {fileID: 7563088615705046221}
+  - component: {fileID: -7041495087022105984}
   m_Layer: 0
-  m_Name: YNote
+  m_Name: LeftNote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 200
---- !u!58 &2375781071858404956
+--- !u!58 &7563088615705046221
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,7 +83,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 7
---- !u!50 &876481105140832427
+--- !u!50 &-7041495087022105984
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -119,8 +119,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5213012691594650056}
-  - component: {fileID: 5332212006821728457}
-  - component: {fileID: 6855688586445848322}
+  - component: {fileID: 781700176412686227}
+  - component: {fileID: 5533683580015563722}
   m_Layer: 0
   m_Name: Render
   m_TagString: Untagged
@@ -147,7 +147,7 @@ RectTransform:
   m_AnchoredPosition: {x: -8, y: 8}
   m_SizeDelta: {x: 16, y: 16}
   m_Pivot: {x: -0, y: 1}
---- !u!222 &5332212006821728457
+--- !u!222 &781700176412686227
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,7 +155,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741606403972227368}
   m_CullTransparentMesh: 1
---- !u!114 &6855688586445848322
+--- !u!114 &5533683580015563722
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 14ee75fda4ae133bca6a6c716a996f8b, type: 3}
+  m_Texture: {fileID: 2800000, guid: 9bd073e9af830b07d8516e1562a68946, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
