@@ -26,7 +26,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 1770351291774458709}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: -10
 --- !u!114 &-9069286465550860195
@@ -88,7 +88,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8788262966368050282}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &-8528221059116673710
@@ -117,7 +117,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -1203318875285871682}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &-8289085507813350125
@@ -250,7 +250,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -948394987918461816}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &-6157436379182274628
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "He canviat, s\xED. Ara les meves paraules tallen m\xE9s que les espases."
   _guid: 71009d6b4114e5247a50a0893e399457
-  _position: {x: -220.79996, y: 3286.4004}
+  _position: {x: -220.79997, y: 3286.3997}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -279,7 +279,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -1690107172275493885}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &-5440302280893523235
@@ -308,7 +308,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -3832302478614523190}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &-4933341701247973827
@@ -337,7 +337,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 7437767931670435583}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 0
   _karma: 0
 --- !u!114 &-4451948124690484161
@@ -724,7 +724,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8730743003867513860}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &742101963094476402
@@ -779,7 +779,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 6864325460505366228}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 400
   _karma: -10
 --- !u!114 &1770351291774458709
@@ -834,7 +834,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -4451948124690484161}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &2389359702804491588
@@ -863,7 +863,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -6568544080252434822}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &2507130676728643214
@@ -892,7 +892,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 742101963094476402}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 400
   _karma: -10
 --- !u!114 &2880597849024727548
@@ -921,7 +921,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -6595828986903649424}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &2942919797212981986
@@ -984,7 +984,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -8289085507813350125}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &4295172605215369085
@@ -1046,7 +1046,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8293966448948061129}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 0
   _karma: 0
 --- !u!114 &5727506728379128300
@@ -1101,7 +1101,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -3234050993659528331}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &6698434180468742843
@@ -1190,7 +1190,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -1622197787080944450}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 400
   _karma: -10
 --- !u!114 &7198198589187679284
@@ -1219,7 +1219,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 5727506728379128300}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &7437767931670435583
@@ -1274,7 +1274,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 128630830212395617}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &8293966448948061129
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Si hagu\xE9s estat un duel, no se que hauria passat."
   _guid: bcd6abc98f58c50478b6a9b66bb37f08
-  _position: {x: -71.19995, y: 1952}
+  _position: {x: -71.20001, y: 1952}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -1329,7 +1329,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -7143930845504168364}
-  _jsonFile: {fileID: 0}
+  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &8730743003867513860

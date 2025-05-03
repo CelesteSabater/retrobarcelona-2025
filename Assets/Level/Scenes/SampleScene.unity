@@ -189,7 +189,7 @@ PrefabInstance:
     - target: {fileID: 5199290928022053212, guid: e7eda830bf7ded76999ff8df01a62be7, type: 3}
       propertyPath: _dialogueTree
       value: 
-      objectReference: {fileID: 11400000, guid: f27c2a434a6a92623875edd2ebe75d29, type: 2}
+      objectReference: {fileID: 11400000, guid: e31bf50eb7ed20141b41e1444e4de40a, type: 2}
     - target: {fileID: 5199290928022053212, guid: e7eda830bf7ded76999ff8df01a62be7, type: 3}
       propertyPath: _puntuacionUI
       value: 
