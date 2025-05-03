@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Per sort per mi, tu no ets res.
   _guid: 220c778e686690141a8da46a22f40204
-  _position: {x: 228.79999, y: 408.8}
+  _position: {x: -150.40002, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: 'Les teves terres? No tens ni per una casa de gos. '
   _guid: 3b60507633486754ebcf93e2597afc3e
-  _position: {x: 76.00004, y: 1357.6002}
+  _position: {x: 260.80005, y: 1357.5999}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Per sort per mi, tu ets el meu adversari.
   _guid: ce6702bd966197d4ab888dd131084e40
-  _position: {x: -78.400024, y: 408.8}
+  _position: {x: -320.512, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Oh!
   _guid: f06d502977512f54db4d3801fdb3038b
-  _position: {x: -224.80005, y: 1649.344}
+  _position: {x: 88.80003, y: 1649.5999}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Es un infern estar amb tu.
   _guid: 99529593939cf6e4abccc479e1be860c
-  _position: {x: 78.399956, y: 408.8}
+  _position: {x: 39.200012, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Millorable.
   _guid: 2ca98342bd0b6fa40ba581775fd73365
-  _position: {x: -71.999954, y: 692.8}
+  _position: {x: -320.80002, y: 692.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Si jo s\xF3c l\u2019hivern tinc sort."
   _guid: 91d2525314b755a4e847d43407bc431d
-  _position: {x: -228.79999, y: 408.8}
+  _position: {x: 235.20001, y: 396.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Tens sort de no ser al qui vinc a fulminar a versos.
   _guid: 1625c382ccf80b44491c0194bbf2c546
-  _position: {x: 232, y: 1357.344}
+  _position: {x: -257.34552, y: 1357.5999}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Mediocre.
   _guid: c0873f4d375d16e45a74f39bcb0c890e
-  _position: {x: 235.19998, y: 692.8}
+  _position: {x: -150.40002, y: 692.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Les teves terres? tot \xE9s gr\xE0cies a la meva fam\xEDlia. "
   _guid: 8ee03ee58d9647b47b7b10854860c38f
-  _position: {x: -238.3999, y: 1357.344}
+  _position: {x: 85.60002, y: 1357.5999}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Saps qui s\xED que vol saber de mi?"
   _guid: e4db7c22b8e8c0449a16647e0f46fa1d
-  _position: {x: 85.60002, y: 1932.8003}
+  _position: {x: -224.80019, y: 2427.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -678,7 +678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Meravellosa contestaci\xF3."
   _guid: 4beb57ff4759ac14ca1506c184d43107
-  _position: {x: -218.40015, y: 2682.4}
+  _position: {x: 75.999954, y: 2682.4001}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Que inapropiat!
   _guid: f319334ae02c3714a9982766ec132746
-  _position: {x: 225.6001, y: 1649.344}
+  _position: {x: -257.6, y: 1649.5999}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Normal que no vulguis saber res si no pots ni quan estic escalfant.
   _guid: 225b77cde3f3c6b46baaf2288a8e4c8a
-  _position: {x: -231.19995, y: 2427.2002}
+  _position: {x: 75.999954, y: 2415.1992}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -817,7 +817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Poca-solta.
   _guid: 3a915331a9d84b84aa3ec015a92cf296
-  _position: {x: 82.3999, y: 2682.4}
+  _position: {x: -224.80008, y: 2682.4001}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Retirarte es la millor opci\xF3."
   _guid: bcd6abc98f58c50478b6a9b66bb37f08
-  _position: {x: -71.20004, y: 1932.8003}
+  _position: {x: -68.00003, y: 2427.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Aquesta ha estat ingeniosa.
   _guid: 60a9803160e1ec04d80023d2a8418dc6
-  _position: {x: -222.39995, y: 692.8}
+  _position: {x: 259.008, y: 692.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Male\xEFt siguis."
   _guid: 67bb3a25c57d2754abda8d22dd3e57f5
-  _position: {x: 75.19995, y: 1649.344}
+  _position: {x: 260.60962, y: 1649.5999}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}

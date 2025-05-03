@@ -652,6 +652,11 @@ MonoBehaviour:
   - {fileID: 4453247011076464881, guid: 4db4dfb1b5b9f7f4bb2191abb6a53b8b, type: 3}
   - {fileID: 4453247011076464881, guid: e1d0f8c33d305834281f2e96e842c9e6, type: 3}
   - {fileID: 4453247011076464881, guid: dac6acf630d1b3f4abeefd628d9d1878, type: 3}
+  _hitSounds:
+  - UkeleleDo
+  - UkeleleRe
+  - UkeleleMi
+  - UkeleleFa
   _perfectRange: 5
   _goodRange: 20
   _badRange: 30

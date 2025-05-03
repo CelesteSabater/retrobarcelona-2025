@@ -266,6 +266,8 @@ namespace retrobarcelona.DialogueTree.Runtime
         {
             switch (_currentNode)
             {         
+                case ChangeScene _node:
+                    break;
                 case Song _node:
                     if (_songFinished)
                         ChangeCurrentNode(_node._child);

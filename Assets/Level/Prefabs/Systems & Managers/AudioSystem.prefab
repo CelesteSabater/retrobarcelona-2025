@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicVolume: 1
   _sfxVolume: 1
-  _startingMusic: 
+  _startingMusic: MusicaMenu
   _musicSounds:
   - _name: Efficiency
     _clip: {fileID: 8300000, guid: 1297f4a458e58af1e8841a64feb1e7e8, type: 3}
@@ -189,15 +189,15 @@ MonoBehaviour:
     _volume: 1
   - _name: Fortune Angloise
     _clip: {fileID: 8300000, guid: 99987378efc84b14c8f47268732b0e45, type: 3}
-    _loop: 1
+    _loop: 0
     _volume: 1
   - _name: La Vallette
     _clip: {fileID: 8300000, guid: 6cb644bd254854c4d9f8e6d4c36d0d40, type: 3}
-    _loop: 1
+    _loop: 0
     _volume: 1
   - _name: Prelude I
     _clip: {fileID: 8300000, guid: 1e1d31196d55d8b42b1a9e3131c653da, type: 3}
-    _loop: 1
+    _loop: 0
     _volume: 1
   - _name: MusicaMenu
     _clip: {fileID: 8300000, guid: 3bd15d7c9b0b27a44b2b15f0c96c1016, type: 3}
@@ -205,19 +205,19 @@ MonoBehaviour:
     _volume: 1
   - _name: Courante
     _clip: {fileID: 8300000, guid: a8f996a318124ec4c8fc27385453ed61, type: 3}
-    _loop: 1
+    _loop: 0
     _volume: 1
   - _name: La Piccarde
     _clip: {fileID: 8300000, guid: 1a09ff6d23a61fd44a7d82d34de72b24, type: 3}
-    _loop: 1
+    _loop: 0
     _volume: 1
   - _name: Onder de Lindegrone
     _clip: {fileID: 8300000, guid: 98cbc3e55b0ef0544ba852922844f987, type: 3}
-    _loop: 1
+    _loop: 0
     _volume: 1
   - _name: Prelude III
     _clip: {fileID: 8300000, guid: 2f19d2cee007bd44b973e15b17adab3a, type: 3}
-    _loop: 1
+    _loop: 0
     _volume: 1
   _sfxSounds:
   - _name: GuitarSound
@@ -228,6 +228,22 @@ MonoBehaviour:
     _clip: {fileID: 8300000, guid: 37d86f95dcaecb84e9d2098d2fc148ee, type: 3}
     _loop: 0
     _volume: 0.25
+  - _name: UkeleleDo
+    _clip: {fileID: 8300000, guid: 6497cff77c0c9fb48a41b2f01cdfa46f, type: 3}
+    _loop: 0
+    _volume: 1
+  - _name: UkeleleFa
+    _clip: {fileID: 8300000, guid: 2191d025804cce742acec03e6f47df95, type: 3}
+    _loop: 0
+    _volume: 1
+  - _name: UkeleleMi
+    _clip: {fileID: 8300000, guid: 21efe75bd86b3c2498710882cc39bdcc, type: 3}
+    _loop: 0
+    _volume: 1
+  - _name: UkeleleRe
+    _clip: {fileID: 8300000, guid: 62c712d899a914e429fc78d09ebea566, type: 3}
+    _loop: 0
+    _volume: 1
   _npcSounds:
   - _name: keystroke_01
     _clip: {fileID: 8300000, guid: dad35d752d7e557909c5dfd998c9582c, type: 3}

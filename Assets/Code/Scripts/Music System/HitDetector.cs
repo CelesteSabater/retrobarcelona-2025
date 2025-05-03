@@ -13,6 +13,7 @@ namespace retrobarcelona.MusicSystem
     public class HitDetector : MonoBehaviour
     {
         [SerializeField] private GameObject[] hitEffects; 
+        [SerializeField] private String[] _hitSounds; 
         [SerializeField] private float _perfectRange = 0.05f; 
         [SerializeField] private float _goodRange = 0.1f; 
         [SerializeField] private float _badRange = 0.5f; 
@@ -57,10 +58,22 @@ namespace retrobarcelona.MusicSystem
                 return;
             }
             
-            if (ControlsManager.Instance.GetIsLane1())  { ProcessHit(0); }
-            if (ControlsManager.Instance.GetIsLane2())  { ProcessHit(1); }
-            if (ControlsManager.Instance.GetIsLane3())  { ProcessHit(2); }
-            if (ControlsManager.Instance.GetIsLane4())  { ProcessHit(3); }
+            if (ControlsManager.Instance.GetIsLane1())  
+            { 
+                ProcessHit(0); 
+            }
+            if (ControlsManager.Instance.GetIsLane2())  
+            { 
+                ProcessHit(1); 
+            }
+            if (ControlsManager.Instance.GetIsLane3())  
+            { 
+                ProcessHit(2); 
+            }
+            if (ControlsManager.Instance.GetIsLane4())  
+            { 
+                ProcessHit(3); 
+            }
         }
 
         void ProcessHit(int lane)
@@ -95,7 +108,7 @@ namespace retrobarcelona.MusicSystem
 
                 Destroy(hit.gameObject);
                 
-                AudioSystem.Instance.PlaySFX("GuitarSound", Vector3.zero);
+                AudioSystem.Instance.PlaySFX(_hitSounds[lane], Vector3.zero);
                 SistemaDePuntos.Instance.CalcularPuntos(timing);
                 hitRegistered = true;
                 break; 

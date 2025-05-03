@@ -54,7 +54,7 @@
         {"time": 0.5, "lane": 3},
 
         {"time": 0.0, "lane": -1, "text": "No ets ni plat fort en aquest banquet de fúria,"},
-        {"time": 0.75, "lane": 0},
+        {"time": 3.75, "lane": 0},
         {"time": 0.25, "lane": 1},
         {"time": 0.5, "lane": 2},
         {"time": 0.5, "lane": 3},
@@ -89,7 +89,7 @@
         {"time": 0.5, "lane": 3},
 
         {"time": 0.0, "lane": -1, "text": "només un aperitiu que ni l’espasa m’ensucia."},
-        {"time": 1.5, "lane": 0},
+        {"time": 3.5, "lane": 0},
         {"time": 1.0, "lane": 1},
         {"time": 0.5, "lane": 2},
         {"time": 1.0, "lane": 3},

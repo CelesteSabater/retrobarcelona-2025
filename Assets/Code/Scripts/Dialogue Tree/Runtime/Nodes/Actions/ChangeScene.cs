@@ -6,14 +6,15 @@ namespace DialogueTree.Runtime
 {
     public class ChangeScene : ActionNode
     {
-        protected override void StartAction() { }
-
-        protected override void EndAction() 
+        protected override void StartAction() 
         { 
-            if (SistemaDePuntos.Instance.GetKarma() > 0) 
-                SceneManager.LoadScene("FinHonor");
+            if (SistemaDePuntos.Instance.GetKarma() < 0) 
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             else
-                SceneManager.LoadScene("FinOdio");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+
         }
+
+        protected override void EndAction() { }
     }
 }

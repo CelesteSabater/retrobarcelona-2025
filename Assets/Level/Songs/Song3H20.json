@@ -2,7 +2,7 @@
     "songName": "La Vallette",
     "notes": [
         {"time": 0.0, "lane": -1, "text": "És natural que no vulguis saber res de mi,"},
-        {"time": 0.5, "lane": 2},
+        {"time": 1.5, "lane": 2},
         {"time": 0.5, "lane": 1},
         {"time": 0.5, "lane": 3},
         {"time": 1.0, "lane": 0},
@@ -23,7 +23,7 @@
         {"time": 0.25, "lane": 1},
 
         {"time": 0.0, "lane": -1, "text": "potser encara no entens el camí que et porto."},
-        {"time": 1.0, "lane": 3},
+        {"time": 2.0, "lane": 3},
         {"time": 0.5, "lane": 0},
         {"time": 0.5, "lane": 2},
         {"time": 0.25, "lane": 1},
@@ -47,7 +47,7 @@
         {"time": 1.0, "lane": 3},
 
         {"time": 0.0, "lane": -1, "text": "Però, com l’aigua calma després del vent furiós,"},
-        {"time": 0.5, "lane": 2},
+        {"time": 1.5, "lane": 2},
         {"time": 0.5, "lane": 1},
         {"time": 0.5, "lane": 3},
         {"time": 1.0, "lane": 0},
@@ -62,13 +62,9 @@
         {"time": 0.5, "lane": 0},
         {"time": 0.5, "lane": 2},
         {"time": 0.5, "lane": 1},
-        {"time": 0.5, "lane": 3},
-        {"time": 1.0, "lane": 0},
-        {"time": 0.75, "lane": 2},
-        {"time": 0.25, "lane": 1},
 
         {"time": 0.0, "lane": -1, "text": "et veuràs obligat a entendre el que el temps t’ha dit."},
-        {"time": 1.0, "lane": 3},
+        {"time": 2.0, "lane": 3},
         {"time": 0.5, "lane": 0},
         {"time": 0.5, "lane": 2},
         {"time": 0.25, "lane": 1},
@@ -78,17 +74,6 @@
         {"time": 0.75, "lane": 1},
         {"time": 0.25, "lane": 3},
         {"time": 0.5, "lane": 0},
-        {"time": 0.5, "lane": 2},
-        {"time": 0.25, "lane": 1},
-        {"time": 0.25, "lane": 3},
-        {"time": 0.5, "lane": 0},
-        {"time": 1.0, "lane": 2},
-
-        {"time": 2.0, "lane": 1},
-        {"time": 0.5, "lane": 3},
-        {"time": 0.5, "lane": 0},
-        {"time": 1.0, "lane": 2},
-        {"time": 1.0, "lane": 1},
-        {"time": 1.0, "lane": 3}
+        {"time": 0.5, "lane": 2}
     ]
 }
