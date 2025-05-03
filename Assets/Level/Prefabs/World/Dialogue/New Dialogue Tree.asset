@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
   m_Name: NPCText
   m_EditorClassIdentifier: 
-  _text: Ay, pues me cago en tu vida.
+  _text: "Qu\xE9 bueno eres!"
   _guid: 672704af26f6735f5bb75d3ceded7b76
-  _position: {x: 26.66663, y: 941.0397}
+  _position: {x: 0.7999935, y: 950.60077}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -38,10 +38,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae897595d6827d4e938ca01d28c0e13, type: 3}
   m_Name: PlayerText
   m_EditorClassIdentifier: 
-  _text: "Considera-ho una benedicci\xF3 no ser l\u2019adversari principal aquesta
-    nit; hi ha honor a saber esperar el seu moment."
+  _text: "Opci\xF3n 4"
   _guid: a8e5db78453ab374f9ea5c32e4ef2fac
-  _position: {x: 368.80002, y: 295.19998}
+  _position: {x: 368.8, y: 259.19998}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -91,9 +90,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
   m_Name: NPCText
   m_EditorClassIdentifier: 
-  _text: a
+  _text: Respuesta 1
   _guid: deba6dcbcd68a8bdb84b44d207819b5c
-  _position: {x: -173.5256, y: 427.28116}
+  _position: {x: -198.40002, y: 427.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -117,9 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
   m_Name: NPCText
   m_EditorClassIdentifier: 
-  _text: d
+  _text: Respuesta 4
   _guid: c7876108c013f6a469c8e817dee8e0ea
-  _position: {x: 375.20004, y: 439.19998}
+  _position: {x: 368.80002, y: 427.19995}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -143,9 +142,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
   m_Name: NPCText
   m_EditorClassIdentifier: 
-  _text: b
+  _text: Respuesta 2
   _guid: 184378a4ded98fc87b0cd1ef75dfae68
-  _position: {x: 17.555292, y: 438.84842}
+  _position: {x: 0.7999878, y: 427.19998}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -169,9 +168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6274fad47bb06a4baea6cdbf2a15f42, type: 3}
   m_Name: StartBranch
   m_EditorClassIdentifier: 
-  _text: it is what it is
+  _text: Bueno, quieres tocar algo?
   _guid: e9f6296cd5d22dc2989726ee9c6405da
-  _position: {x: 0.595459, y: 621.9914}
+  _position: {x: 101.599976, y: 636}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -184,6 +183,7 @@ MonoBehaviour:
   _npcTheme: 
   _choices:
   - {fileID: 816700830973661975}
+  - {fileID: 4189507746087971356}
   _returnOnEndBranch: 0
 --- !u!114 &-3540472818767252947
 MonoBehaviour:
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: :)
   _guid: 706959a938c6031498bd22ee19ccfab0
-  _position: {x: 30.666634, y: 1119.0397}
+  _position: {x: 118.39995, y: 1121.0009}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -222,9 +222,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
   m_Name: NPCText
   m_EditorClassIdentifier: 
-  _text: c
+  _text: Respuesta 3
   _guid: 21b9db8bcde9f9f959d22283aa7754b4
-  _position: {x: 218.96399, y: 437.83295}
+  _position: {x: 195.20001, y: 427.19995}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -264,6 +264,7 @@ MonoBehaviour:
   - {fileID: -3588704057837961881}
   - {fileID: -7414482156812634901}
   - {fileID: -5713182366440673167}
+  - {fileID: 4189507746087971356}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -280,9 +281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "\xA1Te reto a una pelea de gallos!"
+  _text: "S\xED!"
   _guid: f691f6a770b1bc1499b2d688ea590c9f
-  _position: {x: 17.666594, y: 773.0397}
+  _position: {x: 0.7999935, y: 785.0008}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -296,7 +297,7 @@ MonoBehaviour:
   _child: {fileID: -7550669171203605077}
   _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
   _maxScore: 800
-  _karma: -10
+  _karma: 10
 --- !u!114 &904456460139664722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,7 +312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: 
   _guid: 2c690d98c7349036da1a6295c0d09066
-  _position: {x: 9.585449, y: -7.695526}
+  _position: {x: 101.599945, y: -56.613617}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -337,7 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Opci\xF3n 2"
   _guid: ac7d5d916145f11a1b71425ba4ed30b7
-  _position: {x: 1.707057, y: 297.20694}
+  _position: {x: 0.8000183, y: 292}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -363,7 +364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Opci\xF3n 1"
   _guid: 2e5fb898e7065269d94a8a1265fa0d07
-  _position: {x: -182.3764, y: 295.479}
+  _position: {x: -198.40002, y: 295.19995}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -375,6 +376,32 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -6678327433595642639}
+--- !u!114 &4189507746087971356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae897595d6827d4e938ca01d28c0e13, type: 3}
+  m_Name: PlayerText
+  m_EditorClassIdentifier: 
+  _text: No, soy un cobarde :(
+  _guid: 69659dcb7b13520498f760e7f22eb311
+  _position: {x: 193.59995, y: 785.0008}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3540472818767252947}
 --- !u!114 &8837428416895282786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Hola, me llamo #Pepe/.
   _guid: effd174dfdac3a847aabb966ebf51969
-  _position: {x: 9.158447, y: 147.75339}
+  _position: {x: 100.79995, y: 99.38638}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}

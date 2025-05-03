@@ -68,19 +68,16 @@ namespace retrobarcelona.MusicSystem
 
                 if (distance <= _perfectRange)
                 {
-                    Debug.Log("Perfect!");
                     timing = NoteHitTiming.Correct;
                     effect = hitEffects[0];
                 }
                 else if (distance <= _goodRange)
                 {
-                    Debug.Log("Good!");
                     timing = NoteHitTiming.AlmostCorrect;
                     effect = hitEffects[1];
                 }
                 else
                 {
-                    Debug.Log("Bad!");
                     timing = NoteHitTiming.AlmostIncorrect;
                     effect = hitEffects[2];
                 }
@@ -95,8 +92,6 @@ namespace retrobarcelona.MusicSystem
 
             if (!hitRegistered)
             {
-                Debug.Log("Miss!");
-
                 NoteHitTiming timing = NoteHitTiming.Incorrect;
                 SistemaDePuntos.Instance.CalcularPuntos(timing);
                 AudioSystem.Instance.PlaySFX("BrokenGuitarSound", Vector3.zero);

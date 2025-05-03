@@ -30,7 +30,10 @@ namespace retrobarcelona.MusicSystem
             SongData data = JsonUtility.FromJson<SongData>(noteMap.text);
             AudioSystem.Instance.PlayMusic(data.songName);
             foreach (NoteData note in data.notes) {
-                await SpawnNote(note.lane, note.time);
+                if (note.lane != -1)
+                    await SpawnNote(note.lane, note.time);
+                else
+                    await UniTask.Delay(TimeSpan.FromSeconds(note.time));
                 DialogueSystem.Instance.TypeLine(note.text);
             }
             
