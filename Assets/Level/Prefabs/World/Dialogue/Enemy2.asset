@@ -26,7 +26,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 1770351291774458709}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 18442b33ba0f9f745bcbc6c7234a5908, type: 3}
   _maxScore: 800
   _karma: -10
 --- !u!114 &-9069286465550860195
@@ -88,7 +88,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8788262966368050282}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 594a36d726a9f6941bff006fb916016d, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &-8528221059116673710
@@ -117,7 +117,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -1203318875285871682}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: d8a565bc104effc42ae2f9085a0ae97d, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &-8289085507813350125
@@ -250,7 +250,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -948394987918461816}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 8d4b3b4a8687b2d4992a8f9f153b2763, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &-6157436379182274628
@@ -279,7 +279,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -1690107172275493885}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: cd00149c5a5eba94dbc5bbc6fc32146e, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &-5440302280893523235
@@ -308,7 +308,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -3832302478614523190}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: b02117473aef13e4aa9f5cee7960e94b, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &-4933341701247973827
@@ -337,9 +337,9 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 7437767931670435583}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
-  _maxScore: 0
-  _karma: 0
+  _jsonFile: {fileID: 4900000, guid: afa4fb62e045d94488bbe1ec3e31e439, type: 3}
+  _maxScore: 400
+  _karma: -20
 --- !u!114 &-4451948124690484161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8730743003867513860}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 86575399f8e15ef4d89a14f92c75cb65, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &742101963094476402
@@ -779,7 +779,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 6864325460505366228}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: d4957652778af6f409d177da9cc21885, type: 3}
   _maxScore: 400
   _karma: -10
 --- !u!114 &1770351291774458709
@@ -834,7 +834,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -4451948124690484161}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: a0220a9cb3c5a844291a69bcd1f74f4a, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &2389359702804491588
@@ -863,7 +863,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -6568544080252434822}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 1d9f435f7dab2eb458ed223ef5217df8, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &2507130676728643214
@@ -892,7 +892,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 742101963094476402}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 1618b09630a10fb4681b202c63e9b548, type: 3}
   _maxScore: 400
   _karma: -10
 --- !u!114 &2880597849024727548
@@ -921,7 +921,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -6595828986903649424}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 3f0529e68d1f8df4f83fc3c72be86756, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &2942919797212981986
@@ -984,7 +984,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -8289085507813350125}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 3a0de399e30f0864d88835af4d6ed728, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &4295172605215369085
@@ -1046,9 +1046,9 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8293966448948061129}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
-  _maxScore: 0
-  _karma: 0
+  _jsonFile: {fileID: 4900000, guid: 5653ced20ef7a4a43b4096d0db249d54, type: 3}
+  _maxScore: 800
+  _karma: -20
 --- !u!114 &5727506728379128300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,7 +1101,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -3234050993659528331}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 46093b3772cecf7418b80cef79e9c98d, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &6698434180468742843
@@ -1178,7 +1178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Potser he perdut terres, per\xF2 no perdre tant com tu."
   _guid: d3308fd51fdcf584d9ff0a9e59644c31
-  _position: {x: 248.79999, y: 2648.2441}
+  _position: {x: 248.79996, y: 2680}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -1190,7 +1190,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -1622197787080944450}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: d099d6450ee57e04aa8348b8efc96bc4, type: 3}
   _maxScore: 400
   _karma: -10
 --- !u!114 &7198198589187679284
@@ -1219,7 +1219,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 5727506728379128300}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: a83d1380592cb7e418e35dcba9efeb63, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &7437767931670435583
@@ -1274,7 +1274,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 128630830212395617}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 32db5be00c84bed42ab6370d1d2860ea, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &8293966448948061129
@@ -1329,7 +1329,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -7143930845504168364}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: c3a471145b1f79246a1b13edb9d72971, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &8730743003867513860

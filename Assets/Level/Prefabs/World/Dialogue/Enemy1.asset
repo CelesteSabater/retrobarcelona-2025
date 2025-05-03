@@ -26,8 +26,8 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 1770351291774458709}
-  _jsonFile: {fileID: 4900000, guid: 9c1bf63582b88c740ae26d6e5e3e312a, type: 3}
-  _maxScore: 400
+  _jsonFile: {fileID: 4900000, guid: dd682399ddfc0f949b10fc46c60d1df3, type: 3}
+  _maxScore: 800
   _karma: -10
 --- !u!114 &-9069286465550860195
 MonoBehaviour:
@@ -87,7 +87,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8788262966368050282}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 06c3b290d74f44b43ab6113f179e8f58, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &-8528221059116673710
@@ -116,7 +116,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -1203318875285871682}
-  _jsonFile: {fileID: 4900000, guid: fd7000a049ed51d429664ab0af3a7dd3, type: 3}
+  _jsonFile: {fileID: 4900000, guid: f08574716469f494a94dd2e5114382bc, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &-7143930845504168364
@@ -197,7 +197,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -948394987918461816}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 6b615e8aba3035a46b66bd85e67b2ca9, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &-5827754249439053029
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Es un infern estar amb tu.
   _guid: 99529593939cf6e4abccc479e1be860c
-  _position: {x: 78.400024, y: 408.80002}
+  _position: {x: 78.399956, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -253,7 +253,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -3832302478614523190}
-  _jsonFile: {fileID: 4900000, guid: 73ada3c56f763684d901b488d26eb665, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 9844b2fcbbfaa6b499c51b5e2d0ceffc, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &-4933341701247973827
@@ -282,7 +282,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 7437767931670435583}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 4fd6270d92578e3469492dc16c01ccfd, type: 3}
   _maxScore: 400
   _karma: -10
 --- !u!114 &-3832302478614523190
@@ -464,7 +464,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8730743003867513860}
-  _jsonFile: {fileID: 4900000, guid: 111a5fea85fb7ab4cbd234b26f997ef5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 715b38cf0997fe34db6382eee5fea36a, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &931162987619867843
@@ -493,7 +493,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 6864325460505366228}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 0773601a682ad5141a81aab5657d033b, type: 3}
   _maxScore: 400
   _karma: -10
 --- !u!114 &1770351291774458709
@@ -573,7 +573,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -6595828986903649424}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: fb054542c07b6bf4cbad996ab6212578, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &2942919797212981986
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Saps qui s\xED que vol saber de mi?"
   _guid: e4db7c22b8e8c0449a16647e0f46fa1d
-  _position: {x: 78.40001, y: 2427.2}
+  _position: {x: 85.60002, y: 1932.8003}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -661,7 +661,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8293966448948061129}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 133acec74433cea4fbe5ee133bf66aa3, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &5727506728379128300
@@ -774,7 +774,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 5727506728379128300}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 6c548ef278aca14438dae0ddd238d2cd, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &7437767931670435583
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Retirarte es la millor opci\xF3."
   _guid: bcd6abc98f58c50478b6a9b66bb37f08
-  _position: {x: -75.199974, y: 2427.2}
+  _position: {x: -71.20004, y: 1932.8003}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -855,7 +855,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -7143930845504168364}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: ecfb0f32f72964a418b661b2ea69eccf, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &8730743003867513860
