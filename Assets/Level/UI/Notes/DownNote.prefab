@@ -120,7 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5213012691594650056}
   - component: {fileID: 3776405547861834392}
-  - component: {fileID: 6927806935412660705}
+  - component: {fileID: 3067142967089066049}
   m_Layer: 0
   m_Name: Render
   m_TagString: Untagged
@@ -155,7 +155,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741606403972227368}
   m_CullTransparentMesh: 1
---- !u!114 &6927806935412660705
+--- !u!114 &3067142967089066049
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
