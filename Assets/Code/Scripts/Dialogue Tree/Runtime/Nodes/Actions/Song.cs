@@ -3,6 +3,7 @@ using UnityEngine;
 using retrobarcelona.DialogueTree.Runtime;
 using retrobarcelona.MusicSystem;
 using retrobarcelona.Managers;
+using retrobarcelona.UI;
 
 namespace DialogueTree.Runtime
 {
@@ -15,12 +16,11 @@ namespace DialogueTree.Runtime
         protected override void StartAction()
         {
             SongData data = JsonUtility.FromJson<SongData>(_jsonFile.text);
-            float numberOfNotes = _maxScore / data.notes.Length;
-
-            Debug.Log($"Number of notes: {numberOfNotes}");
+            float scoreForNote = _maxScore / data.notes.Length;
 
             GameEvents.current.SetDialogue(false);
             GameEvents.current.StartSong(_jsonFile);
+            SistemaDePuntos.Instance.InitializeSong(scoreForNote, _karma);
         }
 
         protected override void EndAction() { }
