@@ -10,15 +10,36 @@ public class CheerAnimation : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        GameEvents.current.onLowCombo += () => animator.Play("LowCombo"); animator.SetBool("LowCombo", true); animator.SetBool("MidCombo", false); animator.SetBool("HighCombo", false);
-        GameEvents.current.onMidCombo += () => animator.Play("MidCombo"); animator.SetBool("LowCombo", false); animator.SetBool("MidCombo", true); animator.SetBool("HighCombo", false);
-        GameEvents.current.onHighCombo += () => animator.Play("HighCombo"); animator.SetBool("LowCombo", false); animator.SetBool("MidCombo", false); animator.SetBool("HighCombo", true);
+        GameEvents.current.onLowCombo += LowCombo;
+        GameEvents.current.onMidCombo += MidCombo;
+        GameEvents.current.onHighCombo += HighCombo; 
     }
 
     void OnDestroy()
     {
-        GameEvents.current.onLowCombo -= () => animator.Play("LowCombo");
-        GameEvents.current.onMidCombo -= () => animator.Play("MidCombo");
-        GameEvents.current.onHighCombo -= () => animator.Play("HighCombo");
+        GameEvents.current.onLowCombo -= LowCombo;
+        GameEvents.current.onMidCombo -= MidCombo;
+        GameEvents.current.onHighCombo -= HighCombo;
+    }
+
+    void LowCombo()
+    {
+        animator.SetBool("LowCombo", true); 
+        animator.SetBool("MidCombo", false); 
+        animator.SetBool("HighCombo", false);
+    }
+
+    void MidCombo()
+    {
+        animator.SetBool("LowCombo", false); 
+        animator.SetBool("MidCombo", true); 
+        animator.SetBool("HighCombo", false);
+    }
+
+    void HighCombo()
+    {
+        animator.SetBool("LowCombo", false);
+        animator.SetBool("MidCombo", false);
+        animator.SetBool("HighCombo", true);
     }
 }
