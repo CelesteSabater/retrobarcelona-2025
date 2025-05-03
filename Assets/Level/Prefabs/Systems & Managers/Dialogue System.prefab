@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractTimeout: 0.5
   MoveTimeout: 0.5
-  textSpeed: 0.5
+  textSpeed: 2
   _interactTimeoutDelta: 0.5
   _moveTimeoutDelta: 0.1
   _styleFormats:

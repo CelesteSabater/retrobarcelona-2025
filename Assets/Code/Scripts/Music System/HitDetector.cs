@@ -50,6 +50,9 @@ namespace retrobarcelona.MusicSystem
                 if (ControlsManager.Instance.GetIsLane3())  { l = 2; }
                 if (ControlsManager.Instance.GetIsLane4())  { l = 3; }
 
+                if (!ControlsManager.Instance.GetIsAcorde())
+                    return;
+
                 if (l != -1) { Instantiate(hitEffects[l], hitZones[l].position, Quaternion.identity).transform.SetParent(hitZones[l].transform); }
                 return;
             }
@@ -62,6 +65,9 @@ namespace retrobarcelona.MusicSystem
 
         void ProcessHit(int lane)
         {
+            if (!ControlsManager.Instance.GetIsAcorde())
+                return;
+
             bool hitRegistered = false;
             Collider2D[] hits = Physics2D.OverlapCircleAll(hitZones[lane].position, _badRange);
             

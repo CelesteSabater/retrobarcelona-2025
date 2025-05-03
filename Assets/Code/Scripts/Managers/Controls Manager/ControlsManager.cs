@@ -115,7 +115,7 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            return Input.GetKeyDown(KeyCode.Q);
+            return Input.GetKey(KeyCode.Q);
             //return _lane1.ReadValue<float>() > 0.1f ;
         }
 
@@ -123,7 +123,7 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            return Input.GetKeyDown(KeyCode.W);
+            return Input.GetKey(KeyCode.W);
             //return _lane2.ReadValue<float>() > 0.1f ;
         }
 
@@ -131,7 +131,7 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            return Input.GetKeyDown(KeyCode.E);
+            return Input.GetKey(KeyCode.E);
             //return _lane3.ReadValue<float>() > 0.1f ;
         }
 
@@ -139,8 +139,16 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            return Input.GetKeyDown(KeyCode.R);
+            return Input.GetKey(KeyCode.R);
             //return _lane4.ReadValue<float>() > 0.1f ;
+        }
+
+        public bool GetIsAcorde()
+        {
+            if (!_gameControlsControlsAreActive)
+                return false;
+            return Input.GetKeyDown(KeyCode.Space);
+            //return _lane4.ReadValue<float>() > 0.1f ;            
         }
     }
 }
