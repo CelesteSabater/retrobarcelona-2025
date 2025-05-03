@@ -73,7 +73,6 @@ namespace retrobarcelona.DialogueTree.Runtime
         {
             _songFinished = true;
             GameEvents.current.SetDialogue(true);
-            UIManager.Instance.SetName(_npcData._npcName); 
             NextLine();
         }
 
@@ -94,7 +93,7 @@ namespace retrobarcelona.DialogueTree.Runtime
             if (dialogueTree._blackboard._npcData != null)
                 _npcData = dialogueTree._blackboard._npcData;
 
-            UIManager.Instance.ActivateDialogue(_npcData._npcName);
+            UIManager.Instance.ActivateDialogue();
             GameEvents.current.SetDialogue(true);
             _currentTheme = AudioSystem.Instance.GetCurrentMusic();
 
@@ -113,7 +112,7 @@ namespace retrobarcelona.DialogueTree.Runtime
             _dialogueTree = dialogueTree;
             _npcData = npcData;
 
-            UIManager.Instance.ActivateDialogue(_npcData.name);
+            UIManager.Instance.ActivateDialogue();
             GameEvents.current.SetDialogue(true);
             _currentTheme = AudioSystem.Instance.GetCurrentMusic();
 
@@ -214,7 +213,6 @@ namespace retrobarcelona.DialogueTree.Runtime
         private void InteractKey()
         {
             StopAllCoroutines();
-            UIManager.Instance.SetName(_npcData._npcName); 
 
             bool textFinished = IsFinished();
 
@@ -405,7 +403,6 @@ namespace retrobarcelona.DialogueTree.Runtime
             if (text == "")
                 return;
 
-            UIManager.Instance.SetName("Guillem de Berguedà");
             StartCoroutine(TypeLine2(text));
         }
 

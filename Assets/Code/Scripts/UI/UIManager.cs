@@ -11,12 +11,6 @@ namespace retrobarcelona.UI
         [SerializeField] private GameObject ButtonHolder;
         [SerializeField] private GameObject _choiceButtonPrefab;
         
-        public void ActivateDialogue(string name)
-        {
-            SetName(name);
-            DialogueCanvas.SetActive(true);
-        }
-
         public void ActivateDialogue()
         {
             DialogueCanvas.SetActive(true);
@@ -25,13 +19,7 @@ namespace retrobarcelona.UI
         public void DisableDialogue()
         {
             DialogueBox.transform.Find("Text").GetComponent<TMPro.TextMeshProUGUI>().text = "";
-            DialogueBox.transform.Find("Name").GetComponent<TMPro.TextMeshProUGUI>().text = "";
             DialogueCanvas.SetActive(false);
-        }
-
-        public void SetName(string name)
-        {
-            DialogueBox.transform.Find("Name").GetComponent<TMPro.TextMeshProUGUI>().text = name;
         }
 
 
