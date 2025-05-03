@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: afeb30cfb28c3e349b00431b1b532575
+guid: 886cc554c20dd1c44b38c815b18605df
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Arcade Rounded
+  - Minecraft Standard
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
