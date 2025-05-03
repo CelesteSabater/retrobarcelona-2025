@@ -20,14 +20,15 @@ namespace retrobarcelona.UI
             if (sistemaDePuntos != null && textoPuntos != null)
             {
                 // Actualiza el texto de los puntos totales
-                textoPuntos.text = "Puntos: " + sistemaDePuntos.TotalPuntos.ToString();
+                int points = (int) sistemaDePuntos.TotalPuntos();
+                textoPuntos.text = "Puntos: " + points.ToString();
             }
             
             // Verifica que el sistema de puntos y el texto de la racha estén asignados
             if (sistemaDePuntos != null && textoRachaPerfecta != null)
             {
                 // Actualiza el texto de la racha perfecta
-                textoRachaPerfecta.text = "Racha: " + sistemaDePuntos.RachaPerfecta.ToString();
+                textoRachaPerfecta.text = "Racha: " + sistemaDePuntos.Racha().ToString();
             }
         }
     }

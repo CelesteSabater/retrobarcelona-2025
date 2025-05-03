@@ -26,6 +26,33 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -3540472818767252947}
+--- !u!114 &-7414482156812634901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae897595d6827d4e938ca01d28c0e13, type: 3}
+  m_Name: PlayerText
+  m_EditorClassIdentifier: 
+  _text: "Considera-ho una benedicci\xF3 no ser l\u2019adversari principal aquesta
+    nit; hi ha honor a saber esperar el seu moment."
+  _guid: a8e5db78453ab374f9ea5c32e4ef2fac
+  _position: {x: 368.80002, y: 295.19998}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -5713182366440673167}
 --- !u!114 &-7078273086146372433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,6 +94,32 @@ MonoBehaviour:
   _text: a
   _guid: deba6dcbcd68a8bdb84b44d207819b5c
   _position: {x: -173.5256, y: 427.28116}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -3588704057837961881}
+--- !u!114 &-5713182366440673167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: d
+  _guid: c7876108c013f6a469c8e817dee8e0ea
+  _position: {x: 375.20004, y: 439.19998}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -209,6 +262,8 @@ MonoBehaviour:
   - {fileID: -5215002579038293946}
   - {fileID: -2785177436946599890}
   - {fileID: -3588704057837961881}
+  - {fileID: -7414482156812634901}
+  - {fileID: -5713182366440673167}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -349,4 +404,5 @@ MonoBehaviour:
   - {fileID: 1764376009215536227}
   - {fileID: 985535188939992820}
   - {fileID: -7078273086146372433}
+  - {fileID: -7414482156812634901}
   _returnOnEndBranch: 1

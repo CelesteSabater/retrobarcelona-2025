@@ -15,7 +15,7 @@ namespace retrobarcelona.UI
         private float puntosPorNotaCasiCorrecta;
         private float puntosPorNotaCasiIncorrecta;
         private float puntosPorNotaIncorrecta;
-        private int rachaPerfecta = 0; // Para llevar el control de rachas perfectas
+        private int racha = 0; // Para llevar el control de rachas perfectas
 
         [Header("Sistema de Puntos - Karma")]
         // Variables para almacenar los puntos de karma
@@ -45,13 +45,13 @@ namespace retrobarcelona.UI
         }
 
         // Método para agregar puntos al total
-        public void AgregarPuntos(float puntos)
+        private void AgregarPuntos(float puntos)
         {
             totalPuntos += puntos;
         }
 
         // Método temporal para agregar karma (se cambiará en futuras versiones)1
-        public void AgregarKarma(int puntos)
+        private void AgregarKarma(int puntos)
         {
             karmaTotal += puntos;
 
@@ -69,26 +69,26 @@ namespace retrobarcelona.UI
             {
                 case NoteHitTiming.Correct:
                     AgregarPuntos(puntosPorNotaCorrecta);
-                    rachaPerfecta++;
+                    racha++;
                     break;
                 case NoteHitTiming.AlmostCorrect:
                     AgregarPuntos(puntosPorNotaCasiCorrecta);
-                    rachaPerfecta = 0;
+                    racha++;
                     break;
                 case NoteHitTiming.AlmostIncorrect:
                     AgregarPuntos(puntosPorNotaCasiIncorrecta);
-                    rachaPerfecta = 0;
+                    racha++;
                     break;
                 case NoteHitTiming.Incorrect:
                     AgregarPuntos(puntosPorNotaIncorrecta);
-                    rachaPerfecta = 0;
+                    racha = 0;
                     break;
             }
         }
 
         // Métodos de acceso para obtener valores
         public int GetKarma() => karmaTotal;
-        public float TotalPuntos => totalPuntos;
-        public int RachaPerfecta => rachaPerfecta;
+        public float TotalPuntos() => totalPuntos;
+        public int Racha() => racha;
     }
 }

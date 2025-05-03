@@ -27,6 +27,7 @@ namespace retrobarcelona.Other
         [SerializeField] private NoteSpawner _noteSpawner;
         [SerializeField] private DialogueTree.Runtime.DialogueTree _dialogueTree;
         [SerializeField] private DialogueTree.Runtime.NPCData _npcData;
+        [SerializeField] private PuntuacionUI _puntuacionUI;
 
         private int _currentStep, _maxSteps;
 
@@ -74,6 +75,7 @@ namespace retrobarcelona.Other
             _uiManager = Instantiate(_uiManager);
             _dialogueSystem = Instantiate(_dialogueSystem);
             _noteSpawner = Instantiate(_noteSpawner);
+            _puntuacionUI = Instantiate(_puntuacionUI);
 
             await UniTask.Yield();
         }

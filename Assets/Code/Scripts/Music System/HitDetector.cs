@@ -5,6 +5,7 @@ using retrobarcelona.Managers;
 using retrobarcelona.Managers.ControlsManager;
 using retrobarcelona.MusicSystem;
 using retrobarcelona.Systems.AudioSystem;
+using retrobarcelona.UI;
 using UnityEngine;
 
 namespace retrobarcelona.MusicSystem
@@ -60,29 +61,34 @@ namespace retrobarcelona.MusicSystem
                 if (note == null)
                     continue;
 
+                NoteHitTiming timing;
+
                 float distance = Mathf.Abs(hit.transform.position.x - hitZones[lane].position.x);
                 GameObject effect = null;
 
                 if (distance <= _perfectRange)
                 {
                     Debug.Log("Perfect!");
+                    timing = NoteHitTiming.Correct;
                     effect = hitEffects[0];
                 }
                 else if (distance <= _goodRange)
                 {
                     Debug.Log("Good!");
+                    timing = NoteHitTiming.AlmostCorrect;
                     effect = hitEffects[1];
                 }
                 else
                 {
                     Debug.Log("Bad!");
+                    timing = NoteHitTiming.AlmostIncorrect;
                     effect = hitEffects[2];
                 }
 
                 Destroy(hit.gameObject);
                 Instantiate(effect, hitZones[lane].position, Quaternion.identity);
                 AudioSystem.Instance.PlaySFX("GuitarSound", Vector3.zero);
-                //GameManager.Instance.AddScore(hitScore); // Asume que hay un GameManager
+                SistemaDePuntos.Instance.CalcularPuntos(timing);
                 hitRegistered = true;
                 break; 
             }
@@ -90,6 +96,9 @@ namespace retrobarcelona.MusicSystem
             if (!hitRegistered)
             {
                 Debug.Log("Miss!");
+
+                NoteHitTiming timing = NoteHitTiming.Incorrect;
+                SistemaDePuntos.Instance.CalcularPuntos(timing);
                 AudioSystem.Instance.PlaySFX("BrokenGuitarSound", Vector3.zero);
                 //GameManager.Instance.MissNote();
             }

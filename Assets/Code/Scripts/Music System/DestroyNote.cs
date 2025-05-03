@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using retrobarcelona.Systems.AudioSystem;
 using UnityEngine;
+using retrobarcelona.UI;
 
 namespace retrobarcelona.MusicSystem
 {
@@ -13,7 +14,8 @@ namespace retrobarcelona.MusicSystem
             if (note == null)
                 return;
             
-            Debug.Log("Miss!");
+            NoteHitTiming timing = NoteHitTiming.Incorrect;
+            SistemaDePuntos.Instance.CalcularPuntos(timing);
             AudioSystem.Instance.PlaySFX("BrokenGuitarSound", Vector3.zero);
             Destroy(other.gameObject);
             //GameManager.Instance.MissNote();
