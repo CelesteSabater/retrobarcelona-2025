@@ -199,6 +199,10 @@ MonoBehaviour:
     _clip: {fileID: 8300000, guid: 1e1d31196d55d8b42b1a9e3131c653da, type: 3}
     _loop: 1
     _volume: 1
+  - _name: MusicaMenu
+    _clip: {fileID: 8300000, guid: 3bd15d7c9b0b27a44b2b15f0c96c1016, type: 3}
+    _loop: 1
+    _volume: 1
   _sfxSounds:
   - _name: GuitarSound
     _clip: {fileID: 8300000, guid: 053240d3d6c451c47b0d13a199724415, type: 3}

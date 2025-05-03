@@ -37,8 +37,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -549, y: -531.5}
-  m_SizeDelta: {x: -1440, y: -1083}
+  m_AnchoredPosition: {x: -316.12503, y: -529.45}
+  m_SizeDelta: {x: -974.2499, y: -1087.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7202215366146086700
 MonoBehaviour:
@@ -60,8 +60,8 @@ MonoBehaviour:
   m_ChildAlignment: 7
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 10, y: 50}
-  m_Spacing: {x: 0, y: 50}
+  m_CellSize: {x: 10, y: 40.6}
+  m_Spacing: {x: 0, y: 30.9}
   m_Constraint: 2
   m_ConstraintCount: 4
 --- !u!1 &661284002260108315
@@ -328,7 +328,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &3133320165979165298
 MonoBehaviour:
@@ -479,8 +479,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 549, y: -531.5}
-  m_SizeDelta: {x: -1440, y: -1083}
+  m_AnchoredPosition: {x: 500.385, y: -529.45}
+  m_SizeDelta: {x: -1537.23, y: -1087.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3219418320833291419
 MonoBehaviour:
@@ -502,8 +502,8 @@ MonoBehaviour:
   m_ChildAlignment: 7
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 10, y: 50}
-  m_Spacing: {x: 0, y: 50}
+  m_CellSize: {x: 10, y: 40.6}
+  m_Spacing: {x: 0, y: 30.9}
   m_Constraint: 2
   m_ConstraintCount: 4
 --- !u!1 &4162284015279652400
@@ -767,8 +767,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: -6.6535645}
-  m_SizeDelta: {x: -480, y: -33.30713}
+  m_AnchoredPosition: {x: 0.000061035156, y: 46.646408}
+  m_SizeDelta: {x: -480, y: -139.90717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1789416602584167415
 CanvasRenderer:

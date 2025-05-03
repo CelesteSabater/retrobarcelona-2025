@@ -1,6 +1,7 @@
 {
     "songName": "Sarabande Espagnolle",
     "notes": [
+        {"time": 0.0, "lane": -1, "text":"hjkasdfhjkadsfhjk"},
         {"time": 0.0, "lane": 0},
         {"time": 1.5, "lane": 2},
         {"time": 1.5, "lane": 1},

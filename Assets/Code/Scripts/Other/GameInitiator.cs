@@ -14,19 +14,16 @@ namespace retrobarcelona.Other
     {
         [Header("Binder")]
         [SerializeField] private LoadingScreen _loadingScreen;
-        [SerializeField] private GameObject _mainCamera;
         [SerializeField] private EventSystem _eventSystem;
-        [SerializeField] private Light _directionalLight;
+        [SerializeField] private GameObject _enviorement;
 
         [Header("Creation")]
         [SerializeField] private AudioSystem _audioSystem;
         [SerializeField] private ControlsManager _controlsManager;
         [SerializeField] private UIManager _uiManager;
         [SerializeField] private DialogueSystem _dialogueSystem;
-        [SerializeField] private GameObject _enviorement;
         [SerializeField] private NoteSpawner _noteSpawner;
         [SerializeField] private DialogueTree.Runtime.DialogueTree _dialogueTree;
-        [SerializeField] private DialogueTree.Runtime.NPCData _npcData;
         [SerializeField] private PuntuacionUI _puntuacionUI;
 
         private int _currentStep, _maxSteps;
@@ -58,8 +55,7 @@ namespace retrobarcelona.Other
         {
             _eventSystem = Instantiate(_eventSystem);
             _loadingScreen = Instantiate(_loadingScreen);
-            _mainCamera = Instantiate(_mainCamera);
-            _directionalLight = Instantiate(_directionalLight);
+            _enviorement = Instantiate(_enviorement);
         }
 
         private async UniTask InitializeObjects()
@@ -69,7 +65,6 @@ namespace retrobarcelona.Other
 
         private async UniTask CreateObjects()
         {
-            _enviorement = Instantiate(_enviorement);
             _audioSystem = Instantiate(_audioSystem);
             _controlsManager = Instantiate(_controlsManager);
             _uiManager = Instantiate(_uiManager);
@@ -89,7 +84,7 @@ namespace retrobarcelona.Other
         {
             _audioSystem.StartMusic();
             _controlsManager.ActivateGameControls();
-            _dialogueSystem.StartDialogue(_dialogueTree, _npcData);
+            _dialogueSystem.StartDialogue(_dialogueTree);
 
             await UniTask.Yield();
         }
