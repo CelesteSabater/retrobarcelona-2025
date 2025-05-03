@@ -82,8 +82,13 @@ namespace retrobarcelona.MusicSystem
                     effect = hitEffects[2];
                 }
 
+                Transform parent = hit.transform.parent;
+                GameObject go = Instantiate(effect, hitZones[lane].position, Quaternion.identity).gameObject;
+                go.transform.SetParent(parent);
+                go.transform.position = hit.transform.position;
+
                 Destroy(hit.gameObject);
-                Instantiate(effect, hitZones[lane].position, Quaternion.identity);
+                
                 AudioSystem.Instance.PlaySFX("GuitarSound", Vector3.zero);
                 SistemaDePuntos.Instance.CalcularPuntos(timing);
                 hitRegistered = true;
