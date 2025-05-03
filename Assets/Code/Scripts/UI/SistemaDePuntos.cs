@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using retrobarcelona.Utils.Singleton;
 using UnityEngine;
 using retrobarcelona.MusicSystem;
+using retrobarcelona.Managers;
 
 namespace retrobarcelona.UI
 {
@@ -83,6 +84,19 @@ namespace retrobarcelona.UI
                     AgregarPuntos(puntosPorNotaIncorrecta);
                     racha = 0;
                     break;
+            }
+
+            switch (racha)
+            {
+                case 0:
+                   GameEvents.current.LowCombo();
+                   break;
+                case 5:
+                   GameEvents.current.MidCombo();
+                   break;
+                case 10:
+                  GameEvents.current.HighCombo();
+                  break;
             }
         }
 

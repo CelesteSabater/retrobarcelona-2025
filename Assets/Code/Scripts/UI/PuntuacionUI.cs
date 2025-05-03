@@ -28,7 +28,7 @@ namespace retrobarcelona.UI
             if (sistemaDePuntos != null && textoRachaPerfecta != null)
             {
                 // Actualiza el texto de la racha perfecta
-                textoRachaPerfecta.text = sistemaDePuntos.Racha().ToString("D4");
+                textoRachaPerfecta.text = "x"+sistemaDePuntos.Racha().ToString("D2");
             }
         }
     }
