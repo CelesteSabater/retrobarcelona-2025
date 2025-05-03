@@ -648,10 +648,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffects:
-  - {fileID: 7226583673155636401, guid: a2ab56839e1c9504ea9d141e95d0b16b, type: 3}
-  - {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
-  - {fileID: 2955623459812423943, guid: f5507a8c6a22c404ab324980c4e8a11b, type: 3}
-  - {fileID: 8443315704496310910, guid: 6ef35fa36e3a65043b2d800600204bdd, type: 3}
+  - {fileID: 4453247011076464881, guid: e72c6c8c467815f4c88d706fa2d24414, type: 3}
+  - {fileID: 4453247011076464881, guid: 4db4dfb1b5b9f7f4bb2191abb6a53b8b, type: 3}
+  - {fileID: 4453247011076464881, guid: e1d0f8c33d305834281f2e96e842c9e6, type: 3}
+  - {fileID: 4453247011076464881, guid: dac6acf630d1b3f4abeefd628d9d1878, type: 3}
   _perfectRange: 5
   _goodRange: 20
   _badRange: 30

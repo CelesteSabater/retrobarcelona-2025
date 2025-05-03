@@ -20,5 +20,15 @@ namespace retrobarcelona.Managers
         public event Action onSongFinished;
         public void SongFinished() => onSongFinished?.Invoke();
         #endregion
+
+        #region COMBOS
+        public event Action onLowCombo;
+        public void LowCombo() => onLowCombo?.Invoke();
+        public event Action onMidCombo;
+        public void MidCombo() => onMidCombo?.Invoke();
+        
+        public event Action onHighCombo;
+        public void HighCombo() => onHighCombo?.Invoke();
+        #endregion
     }
 }

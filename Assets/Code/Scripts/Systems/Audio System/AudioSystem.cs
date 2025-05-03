@@ -147,6 +147,7 @@ namespace retrobarcelona.Systems.AudioSystem
         {
             if (!_musicSource.isPlaying)
             {
+                if (_previousMusic == null) return;
                 PlayMusic(_previousMusic._name);
             }
         }

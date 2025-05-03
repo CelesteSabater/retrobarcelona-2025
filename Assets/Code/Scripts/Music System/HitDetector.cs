@@ -12,7 +12,7 @@ namespace retrobarcelona.MusicSystem
 {
     public class HitDetector : MonoBehaviour
     {
-        [SerializeField] private GameObject hitEffect; 
+        [SerializeField] private GameObject[] hitEffects; 
         [SerializeField] private float _perfectRange = 0.05f; 
         [SerializeField] private float _goodRange = 0.1f; 
         [SerializeField] private float _badRange = 0.5f; 
@@ -42,7 +42,17 @@ namespace retrobarcelona.MusicSystem
 
         void DetectHits()
         {
-            if (_inDialogue) return;
+            if (_inDialogue) 
+            {
+                int l = -1;
+                if (ControlsManager.Instance.GetIsLane1())  { l = 0; }
+                if (ControlsManager.Instance.GetIsLane2())  { l = 1; }
+                if (ControlsManager.Instance.GetIsLane3())  { l = 2; }
+                if (ControlsManager.Instance.GetIsLane4())  { l = 3; }
+
+                if (l != -1) { Instantiate(hitEffects[l], hitZones[l].position, Quaternion.identity).transform.SetParent(hitZones[l].transform); }
+                return;
+            }
             
             if (ControlsManager.Instance.GetIsLane1())  { ProcessHit(0); }
             if (ControlsManager.Instance.GetIsLane2())  { ProcessHit(1); }
@@ -73,7 +83,7 @@ namespace retrobarcelona.MusicSystem
                     timing = NoteHitTiming.AlmostIncorrect;
 
                 Transform parent = hit.transform.parent;
-                GameObject go = Instantiate(hitEffect, hitZones[lane].position, Quaternion.identity).gameObject;
+                GameObject go = Instantiate(hitEffects[lane], hitZones[lane].position, Quaternion.identity).gameObject;
                 go.transform.SetParent(parent);
                 go.transform.position = hit.transform.position;
 
@@ -90,7 +100,6 @@ namespace retrobarcelona.MusicSystem
                 NoteHitTiming timing = NoteHitTiming.Incorrect;
                 SistemaDePuntos.Instance.CalcularPuntos(timing);
                 AudioSystem.Instance.PlaySFX("BrokenGuitarSound", Vector3.zero);
-                //GameManager.Instance.MissNote();
             }
         }
 
