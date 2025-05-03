@@ -182,7 +182,11 @@ MonoBehaviour:
   - _name: Efficiency
     _clip: {fileID: 8300000, guid: 1297f4a458e58af1e8841a64feb1e7e8, type: 3}
     _loop: 1
-    _volume: 0.159
+    _volume: 0.2
+  - _name: Sarabande Espagnolle
+    _clip: {fileID: 8300000, guid: ca76ec984818d4744baa9bbe649b7197, type: 3}
+    _loop: 0
+    _volume: 1
   _sfxSounds:
   - _name: GuitarSound
     _clip: {fileID: 8300000, guid: 053240d3d6c451c47b0d13a199724415, type: 3}
@@ -224,7 +228,6 @@ MonoBehaviour:
   _musicSource: {fileID: 1631663220996747160}
   _sfxSource: {fileID: 1184309321292960238}
   _npcSource: {fileID: 6004537193887197321}
-  StillSpeaking: 0
 --- !u!1 &3084174129162198759
 GameObject:
   m_ObjectHideFlags: 0

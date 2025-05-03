@@ -26,7 +26,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 1770351291774458709}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 9c1bf63582b88c740ae26d6e5e3e312a, type: 3}
   _maxScore: 800
   _karma: -10
 --- !u!114 &-9069286465550860195
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Per sort per mi, tu ets el meu adversari.
   _guid: ce6702bd966197d4ab888dd131084e40
-  _position: {x: -78.4, y: 408.80002}
+  _position: {x: -78.400024, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -1203318875285871682}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: fd7000a049ed51d429664ab0af3a7dd3, type: 3}
   _maxScore: 400
   _karma: 10
 --- !u!114 &-7143930845504168364
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Es un infern estar amb tu.
   _guid: 99529593939cf6e4abccc479e1be860c
-  _position: {x: 78.40003, y: 408.8}
+  _position: {x: 78.400024, y: 408.80002}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -226,7 +226,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: -3832302478614523190}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 73ada3c56f763684d901b488d26eb665, type: 3}
   _maxScore: 800
   _karma: -20
 --- !u!114 &-4933341701247973827
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: "Si jo s\xF3c l\u2019hivern tinc sort."
   _guid: 91d2525314b755a4e847d43407bc431d
-  _position: {x: -228.79994, y: 408.80002}
+  _position: {x: -228.79999, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -435,7 +435,7 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 8730743003867513860}
-  _jsonFile: {fileID: 4900000, guid: fe8d92b5a08c6c4458eceeba693ab7a5, type: 3}
+  _jsonFile: {fileID: 4900000, guid: 111a5fea85fb7ab4cbd234b26f997ef5, type: 3}
   _maxScore: 800
   _karma: 20
 --- !u!114 &931162987619867843
