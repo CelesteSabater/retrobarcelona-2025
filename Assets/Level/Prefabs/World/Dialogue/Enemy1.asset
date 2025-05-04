@@ -119,6 +119,33 @@ MonoBehaviour:
   _jsonFile: {fileID: 4900000, guid: f08574716469f494a94dd2e5114382bc, type: 3}
   _maxScore: 400
   _karma: 10
+--- !u!114 &-8184352408804091323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: "Les tecles per les notes s\xF3n:\n<sprite index=51> <sprite index=52> <sprite
+    index=53> <sprite index=54>"
+  _guid: 3ae2de1b56c498b46af4319eb11143da
+  _position: {x: -6.399918, y: -150.59882}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -6758364547090691583}
 --- !u!114 &-7143930845504168364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +172,33 @@ MonoBehaviour:
       m_Calls: []
   _npcTheme: 
   _child: {fileID: 1845164521504893788}
+--- !u!114 &-6758364547090691583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4d646313b7d0443ad980e654853e60, type: 3}
+  m_Name: NPCText
+  m_EditorClassIdentifier: 
+  _text: "Es recomana jugar amb el teclat com si fos una guitarra, amb els n\xFAmeros
+    en la part de baix mirant cap al front. "
+  _guid: c22793bcd95949647b6ef00f0234ad4f
+  _position: {x: -6.3999634, y: 3.1999817}
+  _blackboard:
+    _npcData: {fileID: 0}
+    _animator: {fileID: 0}
+  _startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  _npcTheme: 
+  _child: {fileID: -9069286465550860195}
 --- !u!114 &-6595828986903649424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,7 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: 
   _guid: d19923e96e8416f4286370fddbaa229c
-  _position: {x: 0, y: 0}
+  _position: {x: 0, y: -361.424}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -336,7 +390,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _npcTheme: 
-  _child: {fileID: -9069286465550860195}
+  _child: {fileID: -8184352408804091323}
 --- !u!114 &-1203318875285871682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,6 +488,9 @@ MonoBehaviour:
   - {fileID: 1845164521504893788}
   - {fileID: 3580966905190878920}
   - {fileID: -5827754249439053029}
+  - {fileID: -8184352408804091323}
+  - {fileID: 0}
+  - {fileID: -6758364547090691583}
   _blackboard:
     _npcData: {fileID: 11400000, guid: bedd031a9ef5d3a48a8a0889c0d33571, type: 2}
     _animator: {fileID: 0}
