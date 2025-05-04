@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpaceBar : MonoBehaviour
 {
     private Animator animator;
+    public KeyCode keyToPress;
 
     void Start()
     {
@@ -12,11 +13,12 @@ public class SpaceBar : MonoBehaviour
     }
     void Update() 
     { 
-        if (Input.GetKeyDown(KeyCode.Space))  
+        if (animator == null) return; 
+        if (Input.GetKeyDown(keyToPress))  
         { 
             animator.Play("Pulsar"); 
         }
-        if (Input.GetKeyUp(KeyCode.Space))  
+        if (Input.GetKeyUp(keyToPress))  
         { 
             animator.Play("Despulsar"); 
         }

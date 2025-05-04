@@ -95,10 +95,13 @@ namespace retrobarcelona.MusicSystem
                 else
                     timing = NoteHitTiming.AlmostIncorrect;
 
-                Transform parent = hit.transform.parent;
-                GameObject go = Instantiate(hitEffects[lane], hitZones[lane].position, Quaternion.identity).gameObject;
-                go.transform.SetParent(parent);
-                go.transform.position = hit.transform.position;
+                if (timing == NoteHitTiming.Correct)
+                {
+                    Transform parent = hit.transform.parent;
+                    GameObject go = Instantiate(hitEffects[lane], hitZones[lane].position, Quaternion.identity).gameObject;
+                    go.transform.SetParent(parent);
+                    go.transform.position = hit.transform.position;
+                }
 
                 Destroy(hit.gameObject);
                 
