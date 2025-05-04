@@ -115,7 +115,7 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            return Input.GetKeyDown(KeyCode.Q);
+            return Input.GetKeyDown(KeyCode.Alpha1);
             //return _lane1.ReadValue<float>() > 0.1f ;
         }
 
@@ -123,7 +123,7 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            return Input.GetKeyDown(KeyCode.W);
+            return Input.GetKeyDown(KeyCode.Alpha2);
             //return _lane2.ReadValue<float>() > 0.1f ;
         }
 
@@ -131,7 +131,7 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            return Input.GetKeyDown(KeyCode.E);
+            return Input.GetKeyDown(KeyCode.Alpha3);
             //return _lane3.ReadValue<float>() > 0.1f ;
         }
 
@@ -139,7 +139,7 @@ namespace retrobarcelona.Managers.ControlsManager
         {
             if (!_gameControlsControlsAreActive)
                 return false;
-            return Input.GetKeyDown(KeyCode.R);
+            return Input.GetKeyDown(KeyCode.Alpha4);
             //return _lane4.ReadValue<float>() > 0.1f ;
         }
     }

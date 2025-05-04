@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 190066450, guid: 363ed0f9dc2a6d25e8b40948a668c1f0, type: 3}
+  m_Sprite: {fileID: 1852813254, guid: 363ed0f9dc2a6d25e8b40948a668c1f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eac148f1b79d4296d35fc01e272d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyToPress: 113
+  keyToPress: 49
 --- !u!1 &2204723017303808314
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4433db8a5dac4e4f19b493467695aca8, type: 3}
+  m_Sprite: {fileID: -2009431880, guid: 363ed0f9dc2a6d25e8b40948a668c1f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eac148f1b79d4296d35fc01e272d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyToPress: 119
+  keyToPress: 50
 --- !u!1 &2535661894669905366
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -627024816, guid: 363ed0f9dc2a6d25e8b40948a668c1f0, type: 3}
+  m_Sprite: {fileID: 1380386209, guid: 363ed0f9dc2a6d25e8b40948a668c1f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eac148f1b79d4296d35fc01e272d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyToPress: 114
+  keyToPress: 52
 --- !u!1 &6677731057697728117
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -188182713, guid: 363ed0f9dc2a6d25e8b40948a668c1f0, type: 3}
+  m_Sprite: {fileID: -705511098, guid: 363ed0f9dc2a6d25e8b40948a668c1f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -549,4 +549,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 838eac148f1b79d4296d35fc01e272d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyToPress: 101
+  keyToPress: 51
