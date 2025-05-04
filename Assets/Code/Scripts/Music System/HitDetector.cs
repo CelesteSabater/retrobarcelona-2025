@@ -51,7 +51,7 @@ namespace retrobarcelona.MusicSystem
                 if (ControlsManager.Instance.GetIsLane3())  { l = 3; }
                 if (ControlsManager.Instance.GetIsLane4())  { l = 4; }
 
-                if (l != 0) { Instantiate(hitEffects[l], hitZones[l].position, Quaternion.identity).transform.SetParent(hitZones[l].transform); }
+                if (l != 0) { Instantiate(hitEffects[l], hitZones[l-1].position, Quaternion.identity).transform.SetParent(hitZones[l].transform); }
                 return;
             }
             
