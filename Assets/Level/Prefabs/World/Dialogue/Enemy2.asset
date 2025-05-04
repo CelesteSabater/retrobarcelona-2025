@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Que parlin si se atreveixen.
+  _text: Que parlin si #se atreveixen/.
   _guid: 220c778e686690141a8da46a22f40204
   _position: {x: 235.2001, y: 408.79996}
   _blackboard:
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Tu encara no has trobat la clau de la teva pr\xF2pia mis\xE8ria."
+  _text: "Tu encara no has trobat la clau de la teva #pr\xF2pia mis\xE8ria/."
   _guid: 3b60507633486754ebcf93e2597afc3e
   _position: {x: 78.3999, y: 1231.2}
   _blackboard:
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: ' Que xiuxiuegin tot el que vulguin.'
+  _text: ' Que xiuxiuegin tot #el que vulguin/.'
   _guid: ce6702bd966197d4ab888dd131084e40
   _position: {x: -78.4, y: 408.80002}
   _blackboard:
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Encara t\u2019hi quedes, vigilant parets buides."
+  _text: "Encara t\u2019hi quedes, #vigilant parets/ buides."
   _guid: 925d0f1658f2c9340aeadcdabcc61c79
   _position: {x: -78.3999, y: 1231.2}
   _blackboard:
@@ -319,9 +319,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "He canviat, s\xED. Ara les meves paraules tallen m\xE9s que les espases."
+  _text: "He canviat, s\xED. Ara les meves #paraules tallen m\xE9s/ que les espases."
   _guid: 71009d6b4114e5247a50a0893e399457
-  _position: {x: -231.20003, y: 4545.458}
+  _position: {x: -231.19997, y: 4545.6006}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "De m\xED no xiuxiuejen, nom\xE9s parlen de la teva derrota."
+  _text: "De m\xED no xiuxiuejen, nom\xE9s parlen de la #teva derrota/."
   _guid: 99529593939cf6e4abccc479e1be860c
   _position: {x: 78.40003, y: 408.8}
   _blackboard:
@@ -404,9 +404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Si hagu\xE9s estat un duel, m'hauria mort."
+  _text: "Si hagu\xE9s estat un duel, #m'hauria mort/."
   _guid: 8f9fe6397869a8c4cbcc3f9ba5172626
-  _position: {x: 233.59985, y: 2409.6}
+  _position: {x: 235.20006, y: 2409.6}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "De m\xED no xiuxiuejen ni parlen, de mi canten altres trobadors."
+  _text: "De m\xED no xiuxiuejen ni parlen, #de mi canten/ altres trobadors."
   _guid: 91d2525314b755a4e847d43407bc431d
   _position: {x: -235.19995, y: 408.79996}
   _blackboard:
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Encara t\u2019hi quedes, mirant amb por."
+  _text: "Encara t\u2019hi quedes, mirant amb #por/."
   _guid: 1625c382ccf80b44491c0194bbf2c546
   _position: {x: 235.19995, y: 1231.2}
   _blackboard:
@@ -930,9 +930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Amb el temps, he apr\xE8s que puc ser millor."
+  _text: "#Amb el temps/, he apr\xE8s que puc ser millor."
   _guid: 6de9b740c1eda94459a3b6b051f4f3a4
-  _position: {x: -73.60001, y: 4545.458}
+  _position: {x: -74.39994, y: 4545.6006}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -959,9 +959,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Tinc terres i t\xEDtols que em van ser arrabassats."
+  _text: "Tinc terres i t\xEDtols que em #van ser arrabassats/."
   _guid: 0dd537d1cd994814b8d45786f7b5a109
-  _position: {x: -231.2002, y: 3668.8}
+  _position: {x: -230.39993, y: 3668.7996}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -988,7 +988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "No he canviat perqu\xE8 mai he necessitat disfressar-me."
+  _text: "No he canviat perqu\xE8 #mai he necessitat/ disfressar-me."
   _guid: 349693fdf459c4b4b9976f290dc68d74
   _position: {x: 233.6, y: 4545.458}
   _blackboard:
@@ -1017,9 +1017,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Tu encara no has trobat la clau per sortir.
+  _text: Tu encara no has trobat #la clau/ per sortir.
   _guid: 8ee03ee58d9647b47b7b10854860c38f
-  _position: {x: -235.19995, y: 1231.2}
+  _position: {x: -235.20001, y: 1231.2001}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Les terres tornaran a ser meves, costi el que costi.
+  _text: Les terres tornaran a ser meves, #costi el que costi/.
   _guid: 74d734d20e32fe14f8b759c4e40bc2fc
   _position: {x: 81.59985, y: 3668.8}
   _blackboard:
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Vaig fer-ho i no em penedeixo.
+  _text: Vaig fer-ho i #no em penedeixo/.
   _guid: e4db7c22b8e8c0449a16647e0f46fa1d
   _position: {x: 78.3999, y: 2409.6}
   _blackboard:
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Potser he perdut terres, per\xF2 no la dignitat."
+  _text: "Potser he perdut terres, per\xF2 #no la dignitat/."
   _guid: aae79e1389bc42249a0557801c6ab9c6
   _position: {x: -73.6001, y: 3668.8}
   _blackboard:
@@ -1308,7 +1308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Potser he perdut terres, per\xF2 no perdre tant com tu."
+  _text: "Potser he perdut terres, per\xF2 no perdre #tant com tu/."
   _guid: d3308fd51fdcf584d9ff0a9e59644c31
   _position: {x: 238.3999, y: 3668.8}
   _blackboard:
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Vaig actuar com vaig creure que calia en aquell moment.
+  _text: Vaig actuar com #vaig creure que calia/ en aquell moment.
   _guid: 225b77cde3f3c6b46baaf2288a8e4c8a
   _position: {x: -234.40015, y: 2409.6}
   _blackboard:
@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "No he canviat, i qu\xE8 importa?"
+  _text: "#No he canviat/, i qu\xE8 importa?"
   _guid: a9069ca2866a76746bf198cc0d3f444c
   _position: {x: 83.19993, y: 4545.458}
   _blackboard:
@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Si hagu\xE9s estat un duel, no se que hauria passat."
+  _text: "Si hagu\xE9s estat #un duel/, no se que hauria passat."
   _guid: bcd6abc98f58c50478b6a9b66bb37f08
   _position: {x: -78.40015, y: 2409.6}
   _blackboard:

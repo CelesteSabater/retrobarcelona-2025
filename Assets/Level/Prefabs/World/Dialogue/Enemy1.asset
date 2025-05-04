@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Per sort per mi, tu no ets res.
+  _text: Per #sort per mi/, tu no ets res.
   _guid: 220c778e686690141a8da46a22f40204
-  _position: {x: -150.40002, y: 408.8}
+  _position: {x: -150.40004, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: 'Les teves terres? No tens ni per una casa de gos. '
+  _text: 'Les teves terres? No tens ni per una #casa de gos/. '
   _guid: 3b60507633486754ebcf93e2597afc3e
   _position: {x: 260.80005, y: 1357.5999}
   _blackboard:
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Per sort per mi, tu ets el meu adversari.
+  _text: Per sort per mi, tu ets el meu #adversari/.
   _guid: ce6702bd966197d4ab888dd131084e40
   _position: {x: -320.80002, y: 408.8}
   _blackboard:
@@ -183,9 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Tens sort que no ets l\u2019oponent principal d\u2019aquesta nit de duels."
+  _text: "Tens sort que no ets #l\u2019oponent principal/ d\u2019aquesta nit de duels."
   _guid: 925d0f1658f2c9340aeadcdabcc61c79
-  _position: {x: -81.600044, y: 1357.6001}
+  _position: {x: -80.8, y: 1357.5999}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Es un infern estar amb tu.
+  _text: Es un #infern/ estar amb tu.
   _guid: 99529593939cf6e4abccc479e1be860c
   _position: {x: 39.200012, y: 408.8}
   _blackboard:
@@ -268,9 +268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Ni amb la retirada quedar\xE0s b\xE9."
+  _text: "Ni amb la #retirada/ quedar\xE0s b\xE9."
   _guid: 8f9fe6397869a8c4cbcc3f9ba5172626
-  _position: {x: 238.3999, y: 2427.2002}
+  _position: {x: 238.40002, y: 2427.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -450,9 +450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Si jo s\xF3c l\u2019hivern tinc sort."
+  _text: "Si jo s\xF3c #l\u2019hivern/ tinc sort."
   _guid: 91d2525314b755a4e847d43407bc431d
-  _position: {x: 235.20001, y: 396.8}
+  _position: {x: 235.19994, y: 408.79996}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -479,7 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Tens sort de no ser al qui vinc a fulminar a versos.
+  _text: Tens sort de #no/ ser al qui vinc a #fulminar/ a versos.
   _guid: 1625c382ccf80b44491c0194bbf2c546
   _position: {x: -257.34552, y: 1357.5999}
   _blackboard:
@@ -559,9 +559,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Les teves terres? tot \xE9s gr\xE0cies a la meva fam\xEDlia. "
+  _text: "Les teves terres? tot \xE9s gr\xE0cies a la #meva fam\xEDlia/. "
   _guid: 8ee03ee58d9647b47b7b10854860c38f
-  _position: {x: 85.60002, y: 1357.5999}
+  _position: {x: 88.80005, y: 1357.6001}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Saps qui s\xED que vol saber de mi?"
+  _text: "Saps qui s\xED que #vol saber/ de mi?"
   _guid: e4db7c22b8e8c0449a16647e0f46fa1d
   _position: {x: -224.80019, y: 2427.2}
   _blackboard:
@@ -760,9 +760,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: Normal que no vulguis saber res si no pots ni quan estic escalfant.
+  _text: Normal que no vulguis saber res si no pots ni quan #estic escalfant/.
   _guid: 225b77cde3f3c6b46baaf2288a8e4c8a
-  _position: {x: 75.999954, y: 2415.1992}
+  _position: {x: 81.599976, y: 2427.2}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06eb4e9175328641baf9393d7b546bc, type: 3}
   m_Name: Song
   m_EditorClassIdentifier: 
-  _text: "Retirarte es la millor opci\xF3."
+  _text: "#Retirarte/ es la millor opci\xF3."
   _guid: bcd6abc98f58c50478b6a9b66bb37f08
   _position: {x: -68.00003, y: 2427.2}
   _blackboard:
