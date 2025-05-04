@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: Per sort per mi, tu ets el meu adversari.
   _guid: ce6702bd966197d4ab888dd131084e40
-  _position: {x: -320.512, y: 408.8}
+  _position: {x: -320.80002, y: 408.8}
   _blackboard:
     _npcData: {fileID: 0}
     _animator: {fileID: 0}
