@@ -100,7 +100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -696, y: 0}
+  m_AnchoredPosition: {x: -691.7, y: 0}
   m_SizeDelta: {x: -1700, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4769783447944807559
@@ -648,6 +648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffects:
+  - {fileID: 4453247011076464881, guid: 5097f6bab8d2e084f963ad8430045ec2, type: 3}
   - {fileID: 4453247011076464881, guid: e72c6c8c467815f4c88d706fa2d24414, type: 3}
   - {fileID: 4453247011076464881, guid: 4db4dfb1b5b9f7f4bb2191abb6a53b8b, type: 3}
   - {fileID: 4453247011076464881, guid: e1d0f8c33d305834281f2e96e842c9e6, type: 3}
@@ -989,7 +990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -440, y: 0}
+  m_AnchoredPosition: {x: -479.6, y: 0}
   m_SizeDelta: {x: -1700, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &7707665632884310574

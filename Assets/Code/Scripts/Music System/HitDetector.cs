@@ -45,13 +45,13 @@ namespace retrobarcelona.MusicSystem
         {
             if (_inDialogue) 
             {
-                int l = -1;
-                if (ControlsManager.Instance.GetIsLane1())  { l = 0; }
-                if (ControlsManager.Instance.GetIsLane2())  { l = 1; }
-                if (ControlsManager.Instance.GetIsLane3())  { l = 2; }
-                if (ControlsManager.Instance.GetIsLane4())  { l = 3; }
+                int l = 0;
+                if (ControlsManager.Instance.GetIsLane1())  { l = 1; }
+                if (ControlsManager.Instance.GetIsLane2())  { l = 2; }
+                if (ControlsManager.Instance.GetIsLane3())  { l = 3; }
+                if (ControlsManager.Instance.GetIsLane4())  { l = 4; }
 
-                if (l != -1) { Instantiate(hitEffects[l], hitZones[l].position, Quaternion.identity).transform.SetParent(hitZones[l].transform); }
+                if (l != 0) { Instantiate(hitEffects[l], hitZones[l].position, Quaternion.identity).transform.SetParent(hitZones[l].transform); }
                 return;
             }
             
@@ -98,10 +98,17 @@ namespace retrobarcelona.MusicSystem
                 if (timing == NoteHitTiming.Correct)
                 {
                     Transform parent = hit.transform.parent;
-                    GameObject go = Instantiate(hitEffects[lane], hitZones[lane].position, Quaternion.identity).gameObject;
+                    GameObject go = Instantiate(hitEffects[lane+1], hitZones[lane].position, Quaternion.identity).gameObject;
                     go.transform.SetParent(parent);
                     go.transform.position = hit.transform.position;
                 }
+                else
+                {
+                    Transform parent = hit.transform.parent;
+                    GameObject go = Instantiate(hitEffects[0], hitZones[lane].position, Quaternion.identity).gameObject;
+                    go.transform.SetParent(parent);
+                    go.transform.position = hit.transform.position;
+                }  
 
                 Destroy(hit.gameObject);
                 
