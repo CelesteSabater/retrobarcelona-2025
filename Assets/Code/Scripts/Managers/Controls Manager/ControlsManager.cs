@@ -142,13 +142,5 @@ namespace retrobarcelona.Managers.ControlsManager
             return Input.GetKey(KeyCode.R);
             //return _lane4.ReadValue<float>() > 0.1f ;
         }
-
-        public bool GetIsAcorde()
-        {
-            if (!_gameControlsControlsAreActive)
-                return false;
-            return Input.GetKeyDown(KeyCode.Space);
-            //return _lane4.ReadValue<float>() > 0.1f ;            
-        }
     }
 }
