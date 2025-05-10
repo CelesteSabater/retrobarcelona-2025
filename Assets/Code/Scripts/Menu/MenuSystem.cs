@@ -9,6 +9,7 @@ public class MenuSystem : MonoBehaviour
     // public GameObject playButton;
     public GameObject nivelesPanel;
     public GameObject optionsPanel;
+    public GameObject recomendacionPanel;
     public GameObject confirmarPanel;
 
     public Animator animator1;
@@ -35,6 +36,12 @@ public class MenuSystem : MonoBehaviour
     public void Opciones()
     {
         optionsPanel.SetActive(!optionsPanel.activeSelf);
+
+    }
+
+    public void Recomendacion()
+    {
+        recomendacionPanel.SetActive(!recomendacionPanel.activeSelf);
 
     }
 
